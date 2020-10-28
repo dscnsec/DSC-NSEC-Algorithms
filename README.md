@@ -34,3 +34,4 @@ involves devising an algorithm which gives the correct output to a given set of 
 8. Create a pull request to have the changes merged into the origin.
    - Ensure you add to the comments of the pull request `fixes #<issue number>`, replacing **<issue number>** with the number of your issue will automatically close the issue when the pull request is merged.
 
+**Make sure to go through the Contribution Guidelines before making any contribution to the project**
