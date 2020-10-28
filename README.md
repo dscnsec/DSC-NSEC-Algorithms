@@ -3,18 +3,21 @@
 Welcome to the official repository of DSC NSEC Algorithms, which is one of the projects participating in the Winter of Code 2020.
 A project made keeping beginners and aspiring coders in mind who want to start their journey in competitive coding as well as open source.
 You may make a pull request for the following issues:-
+
 - Adding code for a program
 - Fixing some bug in an already existing code
 - New implementation of an algorithm
 - Improving comments in existing algorithms
 
 ## Project Brief
-15 crewmates are on their way to the Space Mission but they are unaware of the fact that there are 3 imposters among them. In order to win, the crewmates 
-need to be careful of the imposters so that they may not kill them and at the same time keep completing their tasks. The imposters lose as soon as the
-tasks are over. As a crewmate, it is your responsibilty to complete all your tasks so that you can save yourself and your fellow crewmates. Each task 
+
+15 crewmates are on their way to the Space Mission but they are unaware of the fact that there are 3 impostors among them. In order to win, the crewmates
+need to be careful of the impostors so that they may not kill them and at the same time keep on completing their tasks. The impostors lose as soon as the
+tasks are over. As a crewmate, it is your responsibilty to complete all your tasks so that you can save yourself and your fellow crewmates. Each task
 involves devising an algorithm which gives the correct output to a given set of input.
 
 ## Getting Started
+
 1. First up you need to fork (make a copy) this repo to your Github account.
 2. Clone (download) your fork to your computer.
 3. Set your streams so you can sync your clone with the original repo (get the latest updates).
