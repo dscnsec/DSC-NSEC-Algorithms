@@ -12,7 +12,7 @@ You may make a pull request for the following issues:-
 ## Project Brief
 
 15 crewmates are on their way to the Space Mission but they are unaware of the fact that there are 3 impostors among them. In order to win, the crewmates
-need to be careful of the impostors so that they may not kill them and at the same time keep on completing their tasks. The impostors lose as soon as the
+need to be careful of the impostors so that they may not kill them and at the same time keep completing their tasks. The impostors lose as soon as the
 tasks are over. As a crewmate, it is your responsibilty to complete all your tasks so that you can save yourself and your fellow crewmates. Each task
 involves devising an algorithm which gives the correct output to a given set of input.
 
