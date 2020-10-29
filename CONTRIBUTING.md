@@ -70,10 +70,55 @@ int main() {
   }
   return 0;
 }
-
+```
 #### Code for checking if 2 files are identical or not
+```#include <bits/stdc++.h>
+using namespace std;
 
+void compareFiles(FILE *fp1, FILE *fp2) 
+{ 
+	char ch1 = getc(fp1); 
+	char ch2 = getc(fp2); 
+	int error = 0, pos = 0, line = 1; 
+	while (ch1 != EOF && ch2 != EOF) 
+	{ 
+		pos++; 
+		if (ch1 == '\n' && ch2 == '\n') 
+		{ 
+			line++; 
+			pos = 0; 
+		} 
+		if (ch1 != ch2) 
+		{ 
+			error++; 
+			cout<<"Line Number : "<<line<<" \tError"
+			" Position : "<<pos<<endl; 
+		} 
+		ch1 = getc(fp1); 
+		ch2 = getc(fp2); 
+	} 
 
+	cout<<"Total Errors : "<<error;
+} 
+
+int main() 
+{ 
+	// opening both file in read only mode 
+	FILE *fp1 = fopen("opp.txt", "r"); 
+	FILE *fp2 = fopen("ans.txt", "r"); 
+
+	if (fp1 == NULL || fp2 == NULL) 
+	{ 
+	cout<<"Error : Files not open"; 
+	exit(0); 
+	} 
+
+	compareFiles(fp1, fp2); 
+
+	fclose(fp1); 
+	fclose(fp2); 
+	return 0; 
+} 
 ```
 #### New File Name guidelines
 - Use lowercase words with ``"_"`` as separator
