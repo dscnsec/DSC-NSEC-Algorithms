@@ -20,11 +20,11 @@ The space general wants to know the number of regions the space station can be d
 
 5 <br/>
 2 <br/>
-"_/" <br/>
-"/_" <br/>
+"_ /" <br/>
+"/ _" <br/>
 2 <br/>
 "_/" <br/>
-"__" <br/>
+"_ _" <br/>
 2 <br/>
 "\\/" <br/>
 "/\\" <br/>
@@ -33,7 +33,7 @@ The space general wants to know the number of regions the space station can be d
 "\\/" <br/>
 2 <br/>
 "//" <br/>
-"/_"
+"/ _"
 
 ## Example Output
 
