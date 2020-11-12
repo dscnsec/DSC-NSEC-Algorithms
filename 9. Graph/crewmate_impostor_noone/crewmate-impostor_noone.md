@@ -21,7 +21,7 @@ The space general wants to know the number of regions the space station can be d
 5 <br/>
 2 <br/>
 "_ /" <br/>
-"/ _" <br/>
+"/ \_" <br/>
 2 <br/>
 "_ /" <br/>
 "_ _" <br/>
