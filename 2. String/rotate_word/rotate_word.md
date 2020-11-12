@@ -18,15 +18,16 @@ As soon as one of your fellow crewmates enters the admin, he notices 2 strings. 
 
 ## Example Input
 
-2
-amazon azonam
+2 <br/>
+amazon azonam <br/>
 amazon onamaz
 
 ## Example Output
 
-YES
+YES <br/>
 YES
 
-Explantion
-azonam when rotated anti-clockwise along n gives amazon
+## Explantion
+
+azonam when rotated anti-clockwise along n gives amazon <br/>
 onamaz when rotated clockwise along n gives amazon

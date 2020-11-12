@@ -14,13 +14,13 @@ The impostors love the digit 0. In order to create problems for them, you have b
 
 ## Example Input
 
-2
-5
-1 0 2 0 3
-6
-0 5 6 9 0 3
+2 <br/>
+5 <br/>
+1 0 2 0 3 <br/>
+6 <br/>
+0 5 6 9 0 3 <br/>
 
 ## Example Output
 
-1 2 3 0 0
-5 6 9 3 0 0
+1 2 3 0 0 <br/>
+5 6 9 3 0 0 <br/>

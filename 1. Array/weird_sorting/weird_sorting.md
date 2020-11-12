@@ -15,8 +15,8 @@ The Space Mission General has N bags. The bags are filled with either 7 or 21 or
 
 ## Example Input
 
-1
-10
+1 <br/>
+10 <br/>
 7 21 7 7 7 21 14 14 21 7
 
 ## Example Output

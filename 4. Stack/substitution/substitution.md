@@ -18,15 +18,15 @@ In admin, the password to swipe the card in the wallet on the draw frame is "abc
 
 ## Example Input
 
-3
-aabcbc
-abcabcababcc
+3 <br/>
+aabcbc <br/>
+abcabcababcc <br/>
 abccba
 
 ## Example Output
 
-YES
-YES
+YES <br/>
+YES <br/>
 NO
 
 ## Explanation

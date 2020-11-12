@@ -14,7 +14,7 @@ Lucky pairs of strings are those pair of strings whose length of the common subs
 
 ## Example Input
 
-2
+2 <br/>
 abcde ace
 
 ## Example Output

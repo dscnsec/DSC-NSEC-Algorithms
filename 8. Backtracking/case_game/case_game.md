@@ -14,13 +14,13 @@ Your crewmates are busy doing tasks and at the moment you have none. To keep you
 
 ## Example Input
 
-1
-4
+1 <br/>
+4 <br/>
 a1b2
 
 ## Example Output
 
-a1b2
-A1b2
-a1B2
+a1b2 <br/>
+A1b2 <br/>
+a1B2 <br/>
 A1B2

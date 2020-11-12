@@ -14,8 +14,8 @@ The crewmates have caught the impostor. However he wants to strike a deal with y
 
 ## Example Input
 
-1
-8
+1 <br/>
+8 <br/>
 1 5 8 9 10 17 17 20
 
 ## Example Output

@@ -14,13 +14,13 @@ As a crewmate, its a test of your observation skills. As soon as you enter the r
 
 ## Example Input
 
-2
-9
-chocolate
-6
+2 <br/>
+9 <br/>
+chocolate <br/>
+6 <br/>
 papaya
 
 ## Example Output
 
-1
+1 <br/>
 4

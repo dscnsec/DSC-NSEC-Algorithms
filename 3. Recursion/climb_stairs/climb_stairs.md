@@ -14,13 +14,13 @@ In order to perform the next task, the crewmates must get to the second floor of
 
 ## Example Input
 
-2
-1
+2 <br/>
+1 <br/>
 2
 
 ## Example Output
 
-1
+1 <br/>
 2
 
 ## Explanation

@@ -13,11 +13,11 @@ To swipe the card in admin, all the crewmates must solve a simple mathematics pr
 
 ## Example Input
 
-2
-11 1
+2 <br/>
+11 1 <br/>
 1010 1011
 
 ## Example Output
 
-100
-10101
+100 <br/>
+10101 <br/>

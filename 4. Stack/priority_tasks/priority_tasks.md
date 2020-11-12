@@ -14,15 +14,15 @@ You have to perform N more tasks in order to complete your duty and contribute i
 
 ## Example Input
 
-2
-3
-1 2 1
-4
+2 <br/>
+3 <br/>
+1 2 1 <br/>
+4 <br/>
 1 3 4 2
 
 ## Example Output
 
-2 -1 2
+2 -1 2 <br/>
 3 4 -1 3
 
 ## Explanation

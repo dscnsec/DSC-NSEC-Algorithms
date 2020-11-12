@@ -12,7 +12,7 @@ NOTE: Use recrusion only
 
 ## Example Input
 
-1
+1 <br/>
 5
 
 ## Example Output

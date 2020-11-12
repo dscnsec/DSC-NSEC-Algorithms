@@ -14,12 +14,12 @@ Being in the space for so long has become very boring for the crewmates. The Spa
 
 ## Example Input
 
-1
-4
-1 3 1 5
-2 2 4 1
-5 0 2 3
-0 6 1 2
+1 <br/>
+4 <br/>
+1 3 1 5 <br/>
+2 2 4 1 <br/>
+5 0 2 3 <br/>
+0 6 1 2 <br/>
 
 ## Example Output
 

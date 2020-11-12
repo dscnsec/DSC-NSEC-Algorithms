@@ -14,14 +14,14 @@ The impostors love palindromic strings. So much that they have declared that the
 
 ## Example Input
 
-2
-aab
+2 <br/>
+aab <br/>
 nitin
 
 ## Example Output
 
-aa b
-a a b
-n i t i n
-n iti n
+aa b <br/>
+a a b <br/>
+n i t i n <br/>
+n iti n <br/>
 nitin

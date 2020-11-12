@@ -16,21 +16,21 @@ Find out the state of the asteroids after all collisions.
 
 ## Example Input
 
-4
-3
-5 10 -5
-2
-8 -8
-3
-10 2 -5
-4
+4 <br/>
+3 <br/>
+5 10 -5 <br/>
+2 <br/>
+8 -8 <br/>
+3 <br/>
+10 2 -5 <br/>
+4 <br/>
 -5 -1 1 5
 
 ## Example Output
 
-5 10
-
-10
+5 10 <br/>
+<br/>
+10 <br/>
 -5 -1 1 5
 
 ## Explanation
