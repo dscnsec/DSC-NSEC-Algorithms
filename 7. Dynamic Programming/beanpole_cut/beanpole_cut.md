@@ -1,5 +1,7 @@
 # Beanpole Cut
 
+**Difficulty: Hard**
+
 The crewmates have caught the impostor. However he wants to strike a deal with you in exchange for his freedom. There is a beanpole of length N. For length i between the range 1 to N the impostor offers pi coins. It is your job to find out the maximum number of coins obtainable by cutting the beanpole in different length rods.
 
 ## Input

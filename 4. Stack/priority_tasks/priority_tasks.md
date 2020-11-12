@@ -1,5 +1,7 @@
 # Priority Tasks
 
+**Difficulty: Medium**
+
 You have to perform N more tasks in order to complete your duty and contribute in the filling of the task bar. The next N tasks have been assigned a priority number. Higher the priority number, higher the priority. 2 or more tasks may or may not have the same priority number. For each of the N tasks, your job is to find out the task with the next greater priority. Note that the priority arrangements are circular, ie, the next priority number of the last task is the priority number of the first task. If no such task exists for a particular task, return -1 for it.
 
 ## Input

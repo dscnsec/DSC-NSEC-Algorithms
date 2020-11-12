@@ -1,5 +1,7 @@
 # Lucky Pairs
 
+**Difficulty: Hard**
+
 As soon as you enter security, you notice that there is a sheet of paper lying which consists of T pairs of words. This sheet is a message from the impostors which states that you need to find out whether each pair of words are **lucky** pairs or not.
 Lucky pairs of strings are those pair of strings whose length of the common subsequence between the 2 is greater than or equal to half the length of the larger string between the pair.
 

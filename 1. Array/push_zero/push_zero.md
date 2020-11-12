@@ -1,5 +1,6 @@
 # Push Zero
 
+**Difficulty: Easy**
 The impostors love the digit 0. In order to create problems for them, you have been given N integers and your task includes pushing all the zeroes to the end of the arrangement of numbers, not disturbing the arrangement of the non-zero integers.
 
 ## Input

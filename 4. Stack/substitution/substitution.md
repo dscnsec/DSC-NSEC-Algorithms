@@ -1,5 +1,7 @@
 # Substitution
 
+**Difficulty: Medium**
+
 In admin, the password to swipe the card in the wallet on the draw frame is "abc". But the notorious impostors altered password to create trouble for the impostors. However, the card can still be accepted if it fulfills the following condition
 
 - Let X="abc". It can be divided in 2 parts X(left) and X(right). X(left) is a substring of X of any length and X(right) is the remaining string of X. Hence, X(left)+X(right)=X. If the password is in the form of X(left) + "abc" + X(right), the card can be accepted.

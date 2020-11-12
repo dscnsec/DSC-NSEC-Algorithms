@@ -1,5 +1,7 @@
 # Case Game
 
+**Difficulty: Hard**
+
 Your crewmates are busy doing tasks and at the moment you have none. To keep yourself busy, you invented a new game for yourself. You take an alphanumeric string and transform every letter individually to be loewrcase or uppercase to create another string. Find out all the possible string created in the above manner
 
 ## Input

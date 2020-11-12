@@ -1,5 +1,7 @@
 # Unique Character
 
+**Difficulty: Easy**
+
 As a crewmate, its a test of your observation skills. As soon as you enter the reactor, you witness a string by the manifold and a digital computer containing digits from 0-9. Your task is to find the index of the first element which does not appear more than once in the entire string and provide the index in the digital computer to unlock the manifold.
 
 ## Input

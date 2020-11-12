@@ -1,5 +1,7 @@
 # Create Sum
 
+**Difficulty: Hard**
+
 The notorious impostors have sabatoged the reactors and the crewmates have only a few minutes to solve a puzzle put forward by the impostors. According to the riddle, there are N integers and target X given. The crewmates have to prepare a list of all unique combinations of the N integers where the chose numbers sum to X. The same integer may be chosen unlimited number of times. Two combinations are unique if the frequency of at least one of the chosen numbers is different.
 
 ## Input

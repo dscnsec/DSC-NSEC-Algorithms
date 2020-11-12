@@ -1,5 +1,7 @@
 # Binary Add
 
+**Difficulty: Easy**
+
 To swipe the card in admin, all the crewmates must solve a simple mathematics problem which is addition of 2 strings. However, the twist here is that the 2 strings will be given in binary and the crewmates have to perform binary addition. Help yourself and other crewmates in the binary addition.
 
 ## Input

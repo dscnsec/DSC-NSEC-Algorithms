@@ -1,5 +1,7 @@
 # Climb Stairs
 
+**Difficulty: Easy**
+
 In order to perform the next task, the crewmates must get to the second floor of the space station. There are N stairs between the first and second floors. Crewmates can take 1 or max 2 steps at a time. Help the Head of the Space Mission find out the number of ways the crewmates can climb to the second floor.
 **NOTE: Use recursion**
 

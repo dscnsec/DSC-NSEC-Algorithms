@@ -1,5 +1,7 @@
 # Pattern
 
+**Difficulty: Easy**
+
 It has come to notice that the visibilty of the impostors can be reduced by 25% if a particular pattern can be designed at weapons. To gain an upper hand over the impostors, can you help your crewmates in forming the pattern?
 NOTE: Use recrusion only
 

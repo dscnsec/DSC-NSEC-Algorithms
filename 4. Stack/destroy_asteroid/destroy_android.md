@@ -1,5 +1,7 @@
 # Destroy Asteroid
 
+**Difficulty: Medium**
+
 There is a game in the weapons section called destroy the asteroids.You need to play this game in order to fill your task bar to throw the impostors out. You have been given the absolute size of N asteroids and their respective signs represent their direction(positive means right, negative means left). All the N asteroids move at the same speed.
 When 2 asteroids collide, you have to destroy the smaller one. If both are of the same size, then destroy both the asteroids. Two asteroids moving in the same direction will never collide.
 Find out the state of the asteroids after all collisions.

@@ -1,5 +1,7 @@
 # Cookie Collect
 
+**Difficulty: Medium**
+
 Being in the space for so long has become very boring for the crewmates. The Space General decided to set up a competition for the crewmates for a little fun. He asked each crewmate to enter into a matrix of size N X N. In each cell there are certain number of cookies. You have to collect the maximum possible number of cookies. But you can only move right, right-up or right-down.
 
 ## Input

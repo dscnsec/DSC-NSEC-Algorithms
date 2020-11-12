@@ -1,5 +1,7 @@
 # Save Yourself
 
+**Difficulty: Hard**
+
 The impostors love palindromic strings. So much that they have declared that they would reduce the killing of crewmates if their puzzle can be solved. They have given a word S and have asked you to partition the string into substrings, such that all the substrings are palindrome. They have asked you to print all possible partitions of the string.
 
 ## Input

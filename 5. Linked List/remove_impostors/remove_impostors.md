@@ -1,5 +1,7 @@
 # Remove Impostors
 
+**Difficulty: Medium**
+
 All the crewmates are asked by the Mission Head to form a queue, joined by the next pointers. It has been realised that there are y number of impostors after x number of crewmates. Remove all y impostors after x crewmates.
 
 ## Input

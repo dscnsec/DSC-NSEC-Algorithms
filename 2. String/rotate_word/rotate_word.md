@@ -1,5 +1,7 @@
 # Rotate Word
 
+**Difficulty: Easy**
+
 As soon as one of your fellow crewmates enters the admin, he notices 2 strings. The instruction says that the 2 string are supposed to be identical but to create trouble for the crewmates, the impostors disrupted the arrangement of the letters of the second string. One of the following 2 operations can be performed on the second string only once:
 
 1. Find the pivot and rotate the string clockwise

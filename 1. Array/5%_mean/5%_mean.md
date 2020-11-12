@@ -1,5 +1,7 @@
 # 5% mean
 
+**Difficulty: Easy**
+
 One of the tasks as a crewmate involves finding out the mean of N integers. But to make the task interesting, the Space Mission co-ordinator gave it a little twist. The new task involves calculating the mean of remaining integers after remiving the smallest 5% and largest 5% of the elements. Help the co-ordinator complete the task to reduce the chances of the impostors to win.
 
 ## Input
