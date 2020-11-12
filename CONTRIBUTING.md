@@ -65,6 +65,79 @@ int main() {
   return 0;
 }
 ```
+##### Linked List
+````cpp
+/**
+ * @file 
+ * @brief Add one line description here
+ * @details 
+ * This is a multi line
+ * description containing links, references,
+ * math equations, etc
+ * @author [Name](https://github.com/handle)
+ */
+ 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+class Node { 
+public: 
+    // val is the key or the value that 
+    // has to be added to the data part 
+    int val; 
+    Node* next; 
+}; 
+
+//Main function  
+int main() 
+{ 
+    //write your code here,
+    //including forming linked list
+    // and taking input
+    return 0;
+} 
+````
+
+##### Binary Tree
+````cpp
+/**
+ * @file 
+ * @brief Add one line description here
+ * @details 
+ * This is a multi line
+ * description containing links, references,
+ * math equations, etc
+ * @author [Name](https://github.com/handle)
+ */
+ 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+struct Node { 
+    int data; 
+    struct Node* left; 
+    struct Node* right;   
+    // val is the key or the value that 
+    // has to be added to the data part 
+    Node(int val) 
+    { 
+        data = val; 
+        // Left and right child for node 
+        // will be initialized to null 
+        left = NULL; 
+        right = NULL; 
+    } 
+}; 
+//Main function  
+int main() 
+{ 
+    //write your code here,
+    //including forming binary tree
+    // and taking input
+    return 0;
+} 
+````
+
 #### New File Name guidelines
 - Use lowercase words with ``"_"`` as separator
 - For instance
