@@ -1,4 +1,4 @@
-# Cookie Collect
+# Task Prerequisite
 
 **Difficulty: Medium**
 
