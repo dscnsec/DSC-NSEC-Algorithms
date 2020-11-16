@@ -1,4 +1,4 @@
-# 5% mean
+# Missing Id
 
 **Difficulty: Easy**
 

@@ -2,14 +2,14 @@
 
 **Difficulty: Medium**
 
-Turns out the crewmates involved in the Space Mission are actually a big family! CoochieMan, one of the crewmates decided to draw a family tree. The family tree depicted that each member of the family has either 0 or 1 or 2 children. They are depicted by ther initials and you can be sure that all the initials in a particular family tree are unique. <br/>
+Turns out the crewmates involved in the Space Mission are actually a big family! CoochieMan, one of the crewmates decided to draw a family tree. The family tree depicted that each member of the family has either 0 or 1 or 2 children. They are depicted by their id numbers and you can be sure that all the ids in a particular family tree are unique. <br/>
 Id no of 2 crewmates, X and Y has been given. The Space Mission General wants to know if both of them are cousins or not. <br/>
 2 crewmates are cousins when they don't share the same parent and belong to the same genration(equal height from top).
 
 ## Input
 
 - The first line of input contains a single integer T. T lines follow
-- Two space generated integers, X and Y, belonging to the binary tree.
+- Two space separated integers, X and Y, belonging to the binary tree.
 
 ## Example Input
 

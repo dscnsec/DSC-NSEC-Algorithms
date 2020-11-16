@@ -7,12 +7,12 @@ All the officials involved in the space mission have assembled together but they
 - If there is any official x to the left of an official y, its rank is definitely smaller than y.
 - If there is any official z to the right of an official y, its rank is definitely higher than y.
 
-Two integers are given, L and R. You are the crewmate who has been assigned the task to find out the number of officials lying the range L to R(both inclusive)
+Two integers are given, L and R. You are the crewmate who has been assigned the task to find out the number of officials lying in the range L to R(both inclusive)
 
 ## Input
 
 - The first line of the input contains a single integer T. T lines follow
-- The second line contains 2 space generted integers, L and R
+- The second line contains 2 space separated integers, L and R
 
 ## Example Input
 

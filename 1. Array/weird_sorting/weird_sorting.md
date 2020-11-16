@@ -9,11 +9,11 @@ The Space Mission General has N bags. The bags are filled with either 7 or 21 or
 
 - The first line of the input contains a single integer T denoting the number of test cases T. T test cases follow
 - The first line of each test case contains a single integer N
-- The next line contains N space generated integers
+- The next line contains N space separated integers
 
 ## Output
 
-- For each test case, print N space generated integers such that they are arranged in a non-decreasing fashion.
+- For each test case, print N space separated integers such that they are arranged in a non-decreasing fashion.
 
 ## Example Input
 

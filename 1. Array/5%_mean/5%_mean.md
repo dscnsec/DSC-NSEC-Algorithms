@@ -2,13 +2,13 @@
 
 **Difficulty: Easy**
 
-One of the tasks as a crewmate involves finding out the mean of N integers. But to make the task interesting, the Space Mission co-ordinator gave it a little twist. The new task involves calculating the mean of remaining integers after remiving the smallest 5% and largest 5% of the elements. Help the co-ordinator complete the task to reduce the chances of the impostors to win.
+One of the tasks as a crewmate involves finding out the mean of N integers. But to make the task interesting, the Space Mission co-ordinator gave it a little twist. The new task involves calculating the mean of remaining integers after removing the smallest 5% and largest 5% of the elements. Help the co-ordinator complete the task to reduce the chances of the impostors to win.
 
 ## Input
 
 - The first line of the input contains a single integer T denoting the number of test cases T. T test cases follow
 - The first line of each test case contains a single integer N
-- The next line contains N space generated integers
+- The next line contains N space separated integers
 
 ## Output
 

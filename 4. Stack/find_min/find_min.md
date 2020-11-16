@@ -2,7 +2,7 @@
 
 **Difficulty: Hard**
 
-When you enter the upper engine, you notice a list of N integers given to you, a keyboard with digits from 0 to 9 and a leaflet beside it. The leaflet mentions that for the list of given integers, you need to find the sum of minimum of every contiguous subarray from the list of integers. As soon as you find out the sum, you need to enter the sum in the keyboard so that the answer is processed and your task is completed.
+When you enter the upper engine, you notice a list of N integers given to you, a keyboard with digits from 0 to 9 and a leaflet beside it. The leaflet mentions that for the given list of integers, you need to find the sum of minimum of every contiguous subarray from the list of integers. As soon as you find out the sum, you need to enter the sum in the keyboard so that the answer is processed and your task is completed.
 **Note: Use stack**
 
 ## Input
@@ -13,7 +13,7 @@ When you enter the upper engine, you notice a list of N integers given to you, a
 
 ## Output
 
-- For each test case, print the sum of minimum of every contiguous subarray from the list of integers. Since the answer may be large, print the answer module **10^9+7**
+- For each test case, print the sum of minimum of every contiguous subarray from the list of integers. Since the answer may be large, print the answer modulo **10^9+7**
 
 ## Example Input
 

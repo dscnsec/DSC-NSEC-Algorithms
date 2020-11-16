@@ -8,11 +8,11 @@ You have to perform N more tasks in order to complete your duty and contribute i
 
 - The first line of the input contains a single integer T denoting the number of test cases. T test cases folows
 - The first line of each test case contains a single digit N
-- The next line contains N space generated integers
+- The next line contains N space separated integers
 
 ## Output
 
-- For each test case, print N space generated integers for which ith element denotes the task with the next greater priority number
+- For each test case, print N space separated integers for which ith element denotes the task with the next greater priority number
 
 ## Example Input
 

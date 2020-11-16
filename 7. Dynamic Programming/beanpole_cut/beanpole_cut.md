@@ -2,13 +2,13 @@
 
 **Difficulty: Hard**
 
-The crewmates have caught the impostor. However he wants to strike a deal with you in exchange for his freedom. There is a beanpole of length N. For length i between the range 1 to N the impostor offers pi coins. It is your job to find out the maximum number of coins obtainable by cutting the beanpole in different length rods.
+The crewmates have caught the impostor. However he wants to strike a deal with you in exchange for his freedom. There is a beanpole of length N. For length i between the range 1 to N the impostor offers P<sub>i</sub> coins. It is your job to find out the maximum number of coins obtainable by cutting the beanpole in different length rods.
 
 ## Input
 
 - The first line of the input contains a single integer T denoting the number of test cases T. T test cases follow
 - The first line of each test case contains a single integer N
-- The next N lines contains N space generated integers
+- The next N lines contains N space separated integers
 
 ## Output
 

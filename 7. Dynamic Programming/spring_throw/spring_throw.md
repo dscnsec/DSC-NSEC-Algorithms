@@ -2,14 +2,14 @@
 
 **Difficulty: Hard**
 
-In the cafeteria, N number of blocks have been designed side to side. Each block contains an integer A1,A2,...,AN. Each block consists of a spring. When you are in the ith block, the spring in the ith will throw you 1 to Ai blocks further, depending on the intensity with which you press the button. <br/>
+In the cafeteria, N number of blocks have been designed side to side. Each block contains an integer A<sub>1</sub>,A<sub>2</sub>,...,A<sub>N</sub>. Each block consists of a spring. When you are in the i<sup>th</sup> block, the spring in the ith will throw you 1 to Ai blocks further, depending on the intensity with which you press the button. <br/>
 Find out the minimum number of times that the spring will throw you so that you reach the end of the blocks. You will start from the first block.
 
 ## Input
 
 - The first line of the input contains a single integer T denoting the number of test cases T. T test cases follow
 - The first line of each test case contains a single integer N
-- The next N lines contains N space generated integers
+- The next N lines contains N space separated integers
 
 ## Output
 

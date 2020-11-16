@@ -8,7 +8,7 @@ Being in the space for so long has become very boring for the crewmates. The Spa
 
 - The first line of the input contains a single integer T denoting the number of test cases T. T test cases follow
 - The first line of each test case contains a single integer N
-- The next N lines contains N space generated integers
+- The next N lines contains N space separated integers
 
 ## Output
 

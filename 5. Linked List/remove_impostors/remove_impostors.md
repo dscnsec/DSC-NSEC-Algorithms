@@ -6,7 +6,7 @@ All the crewmates are asked by the Mission Head to form a queue, joined by the n
 
 ## Input
 
-- First line contains space generated x and y
+- First line contains space separated x and y
 - Second line contains queue information
 
 ## Example Input

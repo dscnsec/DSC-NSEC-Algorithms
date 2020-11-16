@@ -18,11 +18,13 @@ Lucky pairs of strings are those pair of strings whose length of the common subs
 
 2 <br/>
 abcde ace
+abcde afgh
 
 ## Example Output
 
 YES
+NO
 
 ## Explanation
 
-The longest common subsequence is ace and its length is greater than half the length of abcde(3>2.5).
+In Test Case 1, the longest common subsequence is ace and its length is greater than half the length of abcde(3 > 2.5).

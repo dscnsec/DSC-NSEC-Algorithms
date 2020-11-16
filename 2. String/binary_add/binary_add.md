@@ -7,7 +7,7 @@ To swipe the card in admin, all the crewmates must solve a simple mathematics pr
 ## Input
 
 - The first line of the input contains a single integer T denoting the number of test cases. T test cases folows
-- The first line of each test case contains two space generated string, X and Y
+- The first line of each test case contains two space separated string, X and Y
 
 ## Output
 
