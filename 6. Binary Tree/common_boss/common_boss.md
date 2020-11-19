@@ -12,15 +12,17 @@ The Space Commander gives you 2 ids, X and Y and he wants to know their common b
 
 ## Example Input
 
-![btree](../../images/btree3.png)
+![btree](../../images/btree4.PNG)
 
 **2** <br/>
-**10 20** <br/>
-**5 17**
+**6 2** <br/>
+**5 0**
 
 ## Example Output
 
-**False** <br/>
-**True**
+**5** <br/>
+**3**
 
 ## Explanation
+
+- Test Case 1: 6 and 2 branch from 5, which is the id of their immediate common boss.
