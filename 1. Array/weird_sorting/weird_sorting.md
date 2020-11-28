@@ -2,7 +2,7 @@
 
 **Difficulty: Easy**
 
-The Space Mission General has N bags. The bags are filled with either 7 or 21 or 49 coins. He wants to organize the bags in a non-decreasing order. Help the General accomplish the task.
+The Space Mission General has N bags. The bags are filled with either 7 or 14 or 21 coins. He wants to organize the bags in a non-decreasing order. Help the General accomplish the task.
 **Note: Achieve the task in O(n) time and space complexity**
 
 ## Input
