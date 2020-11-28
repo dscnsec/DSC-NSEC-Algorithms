@@ -148,4 +148,15 @@ my_new_cpp_class.cpp    is correct format
 #### Commit Guidelines
 - It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilt across multiple commits.  Try to modify just one or two files in the same directory.  Pull requests that span multiple directories are often rejected.
 
+#### PR Guidelines
+Make sure your PR checks all the below points.
+
+- [ ] Code is added in right directory(Folder).
+- [ ] Brief Description of Solution is given.
+- [ ] Time and Space Complexity is mentioned
+- [ ] Code is well indented.
+- [ ] Comments are clearly written wherever necessary
+- [ ] Code is successfully compiled and passes all test cases.
+
+
 **Happy Coding!**
