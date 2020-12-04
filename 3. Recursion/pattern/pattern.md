@@ -19,8 +19,8 @@ It has come to notice that the visibilty of the impostors can be reduced by 25% 
 
 ## Example Output
 
-1
-1 2
-1 2 3
-1 2 3 4
+1 <br/>
+1 2 <br/>
+1 2 3 <br/>
+1 2 3 4 <br/>
 1 2 3 4 5
