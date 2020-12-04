@@ -17,12 +17,12 @@ Lucky pairs of strings are those pair of strings whose length of the common subs
 ## Example Input
 
 2 <br/>
-abcde ace
+abcde ace <br/>
 abcde afgh
 
 ## Example Output
 
-YES
+YES <br/>
 NO
 
 ## Explanation
