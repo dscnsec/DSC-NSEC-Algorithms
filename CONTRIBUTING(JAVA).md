@@ -10,7 +10,7 @@ Welcome to [DSC NSEC Algorithms](https://github.com/dscnsec/DSC-NSEC-Algorithms)
 ### Contributor
 We are very happy that you consider implementing algorithms and data structures for others! This repository is referred to and used by many learners. Being one of our contributors, you agree and confirm that:
 - You did your own work.
-    - No plagiarism allowed.  Any plagiarized work will not be merged.
+    - No plagiarism allowed. Any plagiarized work will not be merged.
 - Your work will be distributed under [MIT License](License) once your pull request has been merged.
 - You submitted work fulfils or mostly fulfils our styles and standards.
 
@@ -18,7 +18,7 @@ We are very happy that you consider implementing algorithms and data structures 
 
 **Improving comments** in existing algorithms are much appreciated.
 
-**Issues** Please avoid opening issues asking to be "assigned” to a particular algorithm.  This merely creates unnecessary noise for maintainers.  Instead, please submit your implementation in a pull request and it will be evaluated by project maintainers.
+**Issues** Please avoid opening issues asking to be "assigned” to a particular algorithm.  This merely creates unnecessary noise for maintainers. Instead, please submit your implementation in a pull request and it will be evaluated by project maintainers.
 
 ### Making Changes
 
@@ -50,23 +50,21 @@ We are very happy that you consider implementing algorithms and data structures 
  */
 import java.util.Scanner;  // Import the Scanner class
 
-class name
-{
-datatype solve() {
-  //write your code here
-}
-// Main function
- public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);  // Create a Scanner object
-    System.out.println("Enter username");
-   int t= sc.nextInt();  // Read user input
-    while(t--)
-{
- solve();
-  }
-}
-}
+class name {
+    datatype solve() {
+        // Write your code here
+    }
 
+    // Main function
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter username");
+        int t = sc.nextInt();  // Read user input
+        while(t--) {
+            solve();
+        }
+    }
+}
 ```
 ##### Linked List
 ````java
@@ -83,13 +81,11 @@ datatype solve() {
 import java.util.Scanner;  // Import the Scanner class
 
 class Node {
- public static void main(String args[]){  
-  
-  LinkedList<String> al=new LinkedList<String>();  
-//write your code
+    public static void main(String args[]) {  
+        LinkedList<String> al=new LinkedList<String>();  
+        // Write your code
+    }
 }
-}
-
 ````
 
 ##### Binary Tree
@@ -108,47 +104,42 @@ import java.util.*;
 
 /* Class containing left and right child of current 
    node and key value*/
-class Node 
-{ 
+class Node { 
     int key; 
     Node left, right; 
   
-    public Node(int item) 
-    { 
+    public Node(int item) { 
         key = item; 
         left = right = null; 
     } 
 }
-class BinaryTree 
-{ 
+
+class BinaryTree { 
     // Root of Binary Tree 
     Node root; 
   
     // Constructors 
-    BinaryTree(int key) 
-    { 
+    BinaryTree(int key) { 
         root = new Node(key); 
     } 
   
-    BinaryTree() 
-    { 
+    BinaryTree() { 
         root = null; 
     } 
   
-    public static void main(String[] args) 
-    { 
+    public static void main(String[] args) { 
         BinaryTree tree = new BinaryTree(); 
-//write your code
-}
+        // Write your code
+    }
 }
 ````
 
 #### New File Name guidelines
-- Use lowercase words with ``"_"`` as separator
+- Use camel case format with first letter as capital
 - For instance
 ```
-MyNewCppClass.java       is incorrect
-my_new_cpp_class.java    is correct format
+MyNewJavaClass.java       is correct format
+my_new_java_class.java    is incorrect
 ```
 #### Commit Guidelines
 - It is recommended to keep your changes grouped logically within individual commits. Maintainers find it easier to understand changes that are logically spilt across multiple commits.  Try to modify just one or two files in the same directory.  Pull requests that span multiple directories are often rejected.
