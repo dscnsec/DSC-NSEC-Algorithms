@@ -7,6 +7,7 @@
  * fill the array until count of 7>0 and then do same for 14 and 21
  *
  * Time Complexity-O(n) Space Complexity-O(n)
+ * @author [merlin](https://github.com/m-e-r-l-i-n)
  */
 
 #include<bits/stdc++.h>
