@@ -51,14 +51,13 @@ We are very happy that you consider implementing algorithms and data structures 
 import java.util.Scanner;  // Import the Scanner class
 
 class name {
-    datatype solve() {
+    void solve() {
         // Write your code here
     }
 
     // Main function
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);  // Create a Scanner object
-        System.out.println("Enter username");
         int t = sc.nextInt();  // Read user input
         while(t--) {
             solve();
