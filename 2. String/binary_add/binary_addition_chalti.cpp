@@ -12,29 +12,32 @@
 using namespace std;
 
 void solve() { 
-    int t;
-    cin>>t;
-    while(t-->0){
+    
         string x,y;
         cin>>x>>y;
         string result = "";  //initialize the resultant string as null
         int sumOfdigit = 0;  //initialize the sum of the digit as zero 
 
         //traverse both of the strings from last digit to first digit
-        while (x.size() >= 0 || y.size() >= 0 || sumOfdigit == 1) 
+        int xz = x.size()-1 , yz = y.size()-1 ;
+        while (xz >= 0 || yz >= 0 || sumOfdigit == 1) 
         { 
-            sumOfdigit += ((x.size() >= 0)? x[x.size()] - '0': 0); 
-            sumOfdigit += ((y.size() >= 0)? y[y.size()] - '0': 0); 
+            sumOfdigit += ((xz >= 0)? x[xz] - '0': 0); 
+            sumOfdigit += ((yz >= 0)? y[yz] - '0': 0); 
             result = char(sumOfdigit % 2 + '0') + result; //if current result if 1 or 0 then add it with the resultant string
             sumOfdigit /= 2;  //carry
-            x.size()--; y.size()--;  //increase the digit number or move to the next digit
+            xz--; yz--;  //increase the digit number or move to the next digit
         } 
         cout<<result<<endl; //print the ans
-    }
+    
 }
 
 int main() {
-    solve();
+    int t;
+    cin>>t;
+    while(t-->0){
+      solve();
+    }
     return 0;
 }
 
