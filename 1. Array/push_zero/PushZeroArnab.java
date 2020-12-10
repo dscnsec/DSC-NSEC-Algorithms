@@ -17,49 +17,48 @@ import java.io.*;
 /* Name of the class has to be "Main" only if the class is public. */
 class Push_Zero
 {
+    static BufferedReader buf=new BufferedReader(new InputStreamReader(System.in));
     static int arr[];
-    static void solve(int arr[],int n)
+    static StringBuilder sb=new StringBuilder();
+    static void solve() throws java.lang.Exception
     {
-        int zero=0;
+        int n=Integer.parseInt(buf.readLine()); //Reading the input
+        String st1[]=(buf.readLine()).split(" ");
+
+        arr=new int[n];
         for(int j=0;j<n;j++)
-        {
-            if(arr[j]==0)
-                zero++;
-        }
+            arr[j]=Integer.parseInt(st1[j]);
+
         int m=0,j=0;
         while(j<n)
         {
             if(arr[j]!=0)
             {
-                arr[m]=arr[j];
+                arr[m]=arr[j];         //Non zero elements are stored at the beginning
                 m++;
             }
             j++;
         }
         for(j=m;j<n;j++)
-            arr[j]=0;
+            arr[j]=0;          //Rest indices are the left zeroes
+        for(j=0;j<n;j++)
+            sb.append(arr[j]+" ");
+        sb.append("\n");
     }
     public static void main (String[] args) throws java.lang.Exception
     {
         // your code goes here
-        BufferedReader buf=new BufferedReader(new InputStreamReader(System.in));
+
         int t=Integer.parseInt(buf.readLine());
-        StringBuilder sb=new StringBuilder();
+
         for(int i=0;i<t;i++)
         {
-            int n=Integer.parseInt(buf.readLine());
-            String st1[]=(buf.readLine()).split(" ");
-           arr=new int[n];
-           for(int j=0;j<n;j++)
-               arr[j]=Integer.parseInt(st1[j]);
-            solve(arr,n);
-            for(int j=0;j<n;j++)
-                sb.append(arr[j]+" ");
-            sb.append("\n");
+           solve();  //Calling the method solve each time
         }
-        System.out.println(sb);
+        System.out.println(sb);  //Printing it 
     }
 }
+
 
 /*
 input:-
