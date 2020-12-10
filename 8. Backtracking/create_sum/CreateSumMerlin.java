@@ -13,7 +13,7 @@
  *
  * Time Complexity-O(c^n) where c is the size of numbers array and n is the target sum
  * Space Complexity-O(m*c) where m is maximum number of combinations possible
- * @author merlin[]
+ * @author merlin[https://github.com/m-e-r-l-i-n]
  */
 
 import java.io.*;
