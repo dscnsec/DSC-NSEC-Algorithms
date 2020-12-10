@@ -5,7 +5,7 @@
  * Description- 
  * Take the values of input and check if its non zero or not,If non-zero,then apend them to solution,else count the 
    No of occurences.The at the end,append the no of zeroes of that count.
- * Time Complexity-O(n) Space Complexity-O(1)
+ * Time Complexity-O(n) Extra Space Complexity-O(1)
  * @author [codebook-2000] (https://github.com/codebook-2000)
  */
 
@@ -14,9 +14,31 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-
+/* Name of the class has to be "Main" only if the class is public. */
 class Push_Zero
 {
+    static int arr[];
+    static void solve(int arr[],int n)
+    {
+        int zero=0;
+        for(int j=0;j<n;j++)
+        {
+            if(arr[j]==0)
+                zero++;
+        }
+        int m=0,j=0;
+        while(j<n)
+        {
+            if(arr[j]!=0)
+            {
+                arr[m]=arr[j];
+                m++;
+            }
+            j++;
+        }
+        for(j=m;j<n;j++)
+            arr[j]=0;
+    }
     public static void main (String[] args) throws java.lang.Exception
     {
         // your code goes here
@@ -27,21 +49,18 @@ class Push_Zero
         {
             int n=Integer.parseInt(buf.readLine());
             String st1[]=(buf.readLine()).split(" ");
-           int ct=0;
-            for(int j=0;j<n;j++) {
-                int a=Integer.parseInt(st1[j]);
-                if(a!=0)
-                    sb.append(a+" ");    //checking if the value is non zero then appending it to solution
-                else
-                    ct++;           //If zero then counting the no of zeroes
-            }
-           for(int j=1;j<=ct;j++)
-               sb.append(0+" ");         //Then at the end appending all the zeroes
-           sb.append("\n");
+           arr=new int[n];
+           for(int j=0;j<n;j++)
+               arr[j]=Integer.parseInt(st1[j]);
+            solve(arr,n);
+            for(int j=0;j<n;j++)
+                sb.append(arr[j]+" ");
+            sb.append("\n");
         }
         System.out.println(sb);
     }
 }
+
 /*
 input:-
 2
