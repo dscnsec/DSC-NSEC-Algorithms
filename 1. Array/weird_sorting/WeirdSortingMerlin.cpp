@@ -4,9 +4,19 @@
  *
  * Description-
  * take the input array and in first pass count number of 7s,14s, and 21s
- * fill the array until count of 7>0 and then do same for 14 and 21
+ * use a two pointer approach while iterating through the array
  *
- * Time Complexity-O(n) Space Complexity-O(n)
+ * if a[i]=7, we have to add it to the leftmost vacant place, so we swap it with the leftmost vacant position
+ * at any instance, we can be sure that no such scenario exists where a[x-1]=7, a[x]=14 or 21 a[x+1]=7
+ *  because whenever we are finding a 7, we are swapping it with the leftmost position unoccupied by a 7
+ *
+ * if a[i]=21, we have to add it to the rightmost vacant place, so we swap it with the rightmost vacant position
+ *  it is to be noted that we do not increase iterations because it may happen that the value we are swapping with is a 21 and
+ *  there is a 14 in between current and rightmost vacant position
+ *
+ * now we have to iterate till we find the position after which it is guaranteed that we have all 21s
+ *
+ * Time Complexity-O(n) Space Complexity-O(1)
  * @author [merlin](https://github.com/m-e-r-l-i-n)
  */
 
@@ -15,22 +25,32 @@ using namespace std;
 
 void solve()
 {
-    int n,i,c[4];
+    int n,i;
     cin>>n;
     int a[n];
-    c[1]=c[2]=c[3]=0;
+    int one=0,three=n-1;    //one will store 7s from left, three will store 21s from right
     for(i=0;i<n;i++)
-    {
         cin>>a[i];
-        c[a[i]/7]++;        //count of 7 14 and 21s
-    }
 
-    int j=0;
-    for(i=1;i<4;i++)
-    while(c[i]>0)
+    i=0;
+    while(i<=three)
     {
-        a[j++]=7*i;     //adding all 7s first then 14 then 21 starting from 0th index
-        c[i]--;
+        if(a[i]==7)
+        {
+            a[one]=a[one]^a[i]^(a[i]=a[one]);   //swapping with value at one because that is where 7 would go in a sorted array
+            one++;
+        }
+        else if(a[i]==21)
+        {
+            a[three]=a[three]^a[i]^(a[i]=a[three]); //the same thing we did for 7, but doing from right for 21
+            three--;
+            i--;    //to nullify the final i++
+            /*
+             * the value currently present at i may be 21 and there may be a 14 present somewhere between three and i
+             * so we are taking this step
+            */
+        }
+        i++;
     }
 
     for(i=0;i<n;i++)
