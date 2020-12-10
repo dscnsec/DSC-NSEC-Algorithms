@@ -12,7 +12,7 @@
  * If no cycle is formed, task can be completed
  *
  * Time Complexity-O(n), Space Complexity-O(n)
- * @author merlin[]
+ * @author merlin[https://github.com/m-e-r-l-i-n]
  */
 
 import java.io.*;
