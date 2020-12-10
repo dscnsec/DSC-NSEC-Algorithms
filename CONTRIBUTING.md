@@ -52,7 +52,7 @@ We are very happy that you consider implementing algorithms and data structures 
 #include <bits/stdc++.h>
 using namespace std;
 
-datatype solve() {
+void solve() {
   //write your code here
 }
 // Main function
