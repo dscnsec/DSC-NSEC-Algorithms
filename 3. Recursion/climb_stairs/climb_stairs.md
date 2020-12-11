@@ -18,13 +18,18 @@ In order to perform the next task, the crewmates must get to the second floor of
 
 2 <br/>
 1 <br/>
-2
+2 <br/>
+4 <br/>
+5 
 
 ## Example Output
 
 1 <br/>
-2
+2 <br/>
+8 <br/>
+14
 
 ## Explanation
 
 - In test case 2, there are 2 stairs. The xrewmates can climb 2 stairs in 2 ways - (1+1), (2)
+- In test case 3, their are 4 stairs. The xrewmates can climb 4 stairs in 7 ways - (1+1+1+1), (1+2+1), (2+1+1), (1+1+2), (2+2), (3+1), (1+3), (4)
