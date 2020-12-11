@@ -48,22 +48,58 @@ We are very happy that you consider implementing algorithms and data structures 
  * math equations, etc
  * @author [Name](https://github.com/handle)
  */
-import java.util.Scanner;  // Import the Scanner class
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-class name {
-    void solve() {
-        // Write your code here
+public class Solution
+
+{
+    public static void main (String[] args) throws Exception
+    {
+        // BufferedReader will be used for taking input
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        // StringBuilder will be used for output
+        StringBuilder sb = new StringBuilder();
+
+        // t is the number of test cases
+        int t = Integer.parseInt(br.readLine().trim());
+
+        while(t-- > 0){
+            // Assume n is number of input for each test cases
+            int n = Integer.parseInt(br.readLine().trim());
+            // Splits your input entered in a line
+            String[] str = br.readLine().trim().split("\\s+");
+            // This will be the array containing your values
+            int arr[] = new int[n];
+
+            // Parse the values in your str array to int and store them into arr
+            for(int i = 0; i < n; i++){
+                arr[i] = Integer.parseInt(str[i]);
+            }
+
+            // Assume sampleFunc takes parameter of int[]
+            sampleFunc(arr);
+
+            // Assume that you want to print out all the values in a test case, add it to the StringBuilder separated by
+            // a space
+            for(int i = 0; i < n; i++){
+                sb.append(arr[i] + " ");
+            }
+
+            // Insert a new line at the end of the StringBuilder for the next test case
+            sb.append("\n");
+        }
+
+        // Print out the StringBuilder and hence the solution
+        System.out.print(sb);
     }
 
-    // Main function
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);  // Create a Scanner object
-        int t = sc.nextInt();  // Read user input
-        while(t--) {
-            solve();
-        }
+    // Some function where you will write your code
+    private static void sampleFunc(int[] arr) {
+        // Your code goes here
     }
 }
+
 ```
 ##### Linked List
 ````java
@@ -76,14 +112,26 @@ class name {
  * math equations, etc
  * @author [Name](https://github.com/handle)
  */
- 
-import java.util.Scanner;  // Import the Scanner class
 
-class Node {
-    public static void main(String args[]) {  
-        LinkedList<String> al=new LinkedList<String>();  
-        // Write your code
+class Node<T> {
+    T data;
+    Node next;
+
+    public Node(T data) {
+        this.data = data;
     }
+}
+
+class LinkedList {
+    Node firstNode = new Node<Integer>(1);
+    Node secondNode = new Node<Integer>(2);
+    Node thirdNode = new Node<Integer>(3);
+
+    firstNode.next = secondNode;
+    secondNode.next = thirdNode;
+
+    // firstNode --> secondNode --> thirdNode
+    // 1 --> 2 --> 3
 }
 ````
 
