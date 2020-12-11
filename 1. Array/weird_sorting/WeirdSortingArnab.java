@@ -3,8 +3,9 @@
  * Given an array of integers containing 7,14 and 21.Sort them in a non-decreasing manner with O(n) time and space 
    complexity
  * Description:-
- * Count occurences of 7,14 and 21 in 3 separate variables.Then just add each value in the same array starting from 7
- * When 7 ends,add 14 and when 14 ends fill up rest with 21.
+ * Here we keep track of 2 indices-left(for 7) and right(for 21) using 2 pointer approach, and then just run a loop from'
+ * 0 to n-1 and swap when 7 and 21 are encountered and just increment i when 14 is encountered.
+ * Finally we would achieve the formation which we want as 14 is not altered it would come in the middle. 
  * Time Complexity-O(n) Extra Space Complexity-O(1)
  * @author [codebook-2000] (https://github.com/codebook-2000)
  */
@@ -13,60 +14,74 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-
 class Weird_Sorting
 {
-    static BufferedReader buf=new BufferedReader(new InputStreamReader(System.in));
     static int arr[];
-    static void solve() throws java.lang.Exception
+    static void solve(int arr[],int n)
     {
-        int n=Integer.parseInt(buf.readLine());
-        String st1[]=(buf.readLine()).split(" ");      //Take input from user
-
-        arr=new int[n];
-        int cnt7=0,cnt14=0,cnt21=0;
-        for(int j=0;j<n;j++) {
-            arr[j] = Integer.parseInt(st1[j]);
-            if(arr[j]==7)            //Counting the no of 7's
-                cnt7++;
-            if(arr[j]==14)            //Counting the no of 14's
-                cnt14++;
-            if(arr[j]==21)            //Counting the no of 21's
-                cnt21++;
-        }
-        for(int j=0;j<n;j++)
+        int i=0,left=0,right=n-1;    //left is the left indices which stores 7
+        while(i<=right && left<=right)  //right is the end indices which stores 21
         {
-            if(cnt7>0)                
-            {
-                arr[j]=7;           //Modifying the array by first putting all 7 into it and decreasing the count.
-                cnt7--;
+            if(arr[i]==7)           //checking if value is 7 or not,if yes then we would swap with                
+            {                       //Left indices and then increment left
+                if(arr[left]==7)    // Now if both left and i are same,then increment both else for different
+                {                   //indices having same value increment only left 
+                    if(left==i) {
+                        left++;
+                        i++;
+                    }
+                    else
+                    {
+                        left++;
+                    }
+                }
+                else
+                {
+                    int c=arr[left];     //Swap the values at the indices 
+                    arr[left]=arr[i];
+                    arr[i]=c;
+                    left++;
+                }
             }
-            else if(cnt14>0)
-            {  
-                arr[j]=14;          //When 7 gets finished start with 14
-                cnt14--;
+            else if(arr[i]==21)
+            {
+                if(arr[right]==21)
+                {
+                    right--;             //Same goes for this index as well as for left 
+                }
+                else
+                {
+                    int c=arr[right];
+                    arr[right]=arr[i];
+                    arr[i]=c;
+                    right--;
+                }
             }
             else
-            {
-                arr[j]=21;         //When 14 gets finished fill the rest with 21.
-                cnt21--;
-            }
+                i++;
         }
-     for(int j=0;j<n;j++)
-         System.out.print(arr[j]+" ");  //Now print the array 
-     System.out.println();
-
     }
     public static void main (String[] args) throws java.lang.Exception
     {
         // your code goes here
-
+        BufferedReader buf=new BufferedReader(new InputStreamReader(System.in));
         int t=Integer.parseInt(buf.readLine());
-
+        StringBuilder sb=new StringBuilder();
         for(int i=0;i<t;i++)
         {
-           solve();        //Call the method;
+            int n=Integer.parseInt(buf.readLine());
+            String st1[]=(buf.readLine()).split(" ");   // Take the input 
+
+            arr=new int[n];
+            for(int j=0;j<n;j++) {
+                arr[j] = Integer.parseInt(st1[j]);
+            }
+           solve(arr,n);    //Call the method
+            for(int j=0;j<n;j++)
+                sb.append(arr[j]+" ");  //Print it
+            sb.append("\n");
         }
+        System.out.println(sb);
     }
 }
 
