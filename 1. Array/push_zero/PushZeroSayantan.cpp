@@ -28,12 +28,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void solve( int a[], int n ) {
+void solve() {
   //write your code here
-  int c = 0;
-  for(int i=0;i<n;i++)
-  {
-  //Ignoring the zero elements
+    int n;
+    cin>>n;
+    int a[n];
+    for( int i=0;i<n;i++ )
+    {
+        cin>>a[i];
+    }
+    int c = 0;
+    for(int i=0;i<n;i++)
+    {
+      //Ignoring the zero elements
       if( a[i] != 0 )
       {
           a[c++] = a[i];
@@ -44,7 +51,11 @@ void solve( int a[], int n ) {
     {
         a[c++] = 0;
     }
-
+    for( int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
 }
 // Main function
 int main() {
@@ -52,19 +63,7 @@ int main() {
   cin>>t;
   while(t--)
  {
-    int n;
-    cin>>n;
-    int a[n];
-    for( int i=0;i<n;i++ )
-    {
-        cin>>a[i];
-    }
-    solve(a,n);
-    for( int i=0;i<n;i++)
-    {
-        cout<<a[i]<<" ";
-    }
-    cout<<endl;
-  }
-  return 0;
+   solve();
+ }
+ return 0;
 }
