@@ -19,11 +19,24 @@ import java.util.*;
 
 class CaseGameMerlin
 {
-    static BufferedReader bu=new BufferedReader(new InputStreamReader(System.in));
-    static ArrayList<String> solve()throws Exception
+    public static void main(String args[])throws Exception
     {
-        int n=Integer.parseInt(bu.readLine().trim());
-        char s[]=bu.readLine().toCharArray();
+        BufferedReader bu=new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb=new StringBuilder();
+        int t=Integer.parseInt(bu.readLine());
+        while(t-->0)
+        {
+            int n=Integer.parseInt(bu.readLine().trim());
+            char s[]=bu.readLine().toCharArray();
+            ArrayList<String> ans=solve(n,s);
+            for(String st:ans)
+                sb.append(st+"\n");
+        }
+        System.out.print(sb);
+    }
+
+    static ArrayList<String> solve(int n,char s[])
+    {
         int i;
         ArrayList<String> res=new ArrayList<>();
         res.add("");
@@ -45,19 +58,6 @@ class CaseGameMerlin
         }
         return res;
     }
-
-    public static void main(String args[])throws Exception
-    {
-        StringBuilder sb=new StringBuilder();
-        int t=Integer.parseInt(bu.readLine());
-        while(t-->0)
-        {
-            ArrayList<String> ans=solve();
-            for(String s:ans)
-                sb.append(s+"\n");
-        }
-        System.out.print(sb);
-    }
 }
 
 /*
@@ -71,4 +71,4 @@ a1b2
 A1b2
 a1B2
 A1B2
- */
+*/
