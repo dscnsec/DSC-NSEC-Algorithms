@@ -21,16 +21,43 @@ import java.util.*;
 
 class CreateSumMerlin
 {
-
-    static BufferedReader bu=new BufferedReader(new InputStreamReader(System.in));
-    static ArrayList<Integer> solve()throws Exception
+    public static void main(String args[])throws Exception
     {
-        String s[]=bu.readLine().trim().split(" ");
-        int n=Integer.parseInt(s[0]),sum=Integer.parseInt(s[1]),i;
-        int c[]=new int[n];
-        s=bu.readLine().split(" ");
-        for(i=0;i<n;i++)
-            c[i]=Integer.parseInt(s[i]);
+        BufferedReader bu=new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb=new StringBuilder();
+        int t=Integer.parseInt(bu.readLine());
+        while(t-->0)
+        {
+            String s[]=bu.readLine().trim().split(" ");
+            int n=Integer.parseInt(s[0]),sum=Integer.parseInt(s[1]),i;
+            int c[]=new int[n];
+            s=bu.readLine().split(" ");
+            for(i=0;i<n;i++)
+                c[i]=Integer.parseInt(s[i]);
+
+            ArrayList<Integer> ans=solve(n,sum,c);
+            if(ans.size()==0) continue;
+            i=1;
+            int sz=-ans.get(0);
+            //every element that is negative denotes the number of next elements that are there which form a combination
+            while(true)
+            {
+                while(sz!=0)
+                {
+                    sb.append(ans.get(i)+" ");
+                    i++;
+                    sz--;
+                }
+                sb.append("\n");
+                if(i!=ans.size()) sz=-ans.get(i++);
+                else break;
+            }
+        }
+        System.out.print(sb);
+    }
+
+    static ArrayList<Integer> solve(int n,int sum,int c[])
+    {
 
         ArrayList<Integer> res=new ArrayList<>();   //store our results
         Stack<Integer> st=new Stack<>();    // using a stack pushing popping functions becomes easier
@@ -56,32 +83,6 @@ class CreateSumMerlin
             s.pop();    //remove the number
         }
     }
-
-    public static void main(String args[])throws Exception
-    {
-        StringBuilder sb=new StringBuilder();
-        int t=Integer.parseInt(bu.readLine());
-        while(t-->0)
-        {
-            ArrayList<Integer> ans=solve();
-            if(ans.size()==0) continue;
-            int i=1,sz=-ans.get(0);
-            //every element that is negative denotes the number of next elements that are there which form a combination
-            while(true)
-            {
-                while(sz!=0)
-                {
-                    sb.append(ans.get(i)+" ");
-                    i++;
-                    sz--;
-                }
-                sb.append("\n");
-                if(i!=ans.size()) sz=-ans.get(i++);
-                else break;
-            }
-        }
-        System.out.print(sb);
-    }
 }
 
 /*
@@ -93,11 +94,11 @@ sample i/p-
 2 4 3
 
 sample o/p-
-2 2 3 
-7 
-2 2 2 2 2 3 
-2 2 2 4 3 
-2 2 3 3 3 
-2 4 4 3 
-4 3 3 3 
- */
+2 2 3
+7
+2 2 2 2 2 3
+2 2 2 4 3
+2 2 3 3 3
+2 4 4 3
+4 3 3 3
+*/
