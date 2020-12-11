@@ -20,27 +20,41 @@ import java.util.*;
 
 class TaskPrerequisiteMerlin
 {
-    static BufferedReader bu=new BufferedReader(new InputStreamReader(System.in));
-    static boolean solve()throws Exception
+    public static void main(String args[])throws Exception
     {
-        String s[]=bu.readLine().trim().split(" ");
-        int n=Integer.parseInt(s[0]),k=Integer.parseInt(s[1]),i;
-        ArrayList<Integer> g[]=new ArrayList[n];
-        for(i=0;i<n;i++)
-            g[i]=new ArrayList<>();
-
-        for(i=0;i<k;i++)
+        BufferedReader bu=new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb=new StringBuilder();
+        int t=Integer.parseInt(bu.readLine());
+        while(t-->0)
         {
-            s=bu.readLine().split(" ");
-            int u=Integer.parseInt(s[0]),v=Integer.parseInt(s[1]);
-            g[u].add(v);
-        }
+            String s[]=bu.readLine().trim().split(" ");
+            int n=Integer.parseInt(s[0]),k=Integer.parseInt(s[1]),i;
+            ArrayList<Integer> g[]=new ArrayList[n];
+            for(i=0;i<n;i++)
+                g[i]=new ArrayList<>();
 
+            for(i=0;i<k;i++)
+            {
+                s=bu.readLine().split(" ");
+                int u=Integer.parseInt(s[0]),v=Integer.parseInt(s[1]);
+                g[u].add(v);
+            }
+
+            boolean ans=solve(g);
+            if(ans) sb.append("YES\n");
+            else sb.append("NO\n");
+        }
+        System.out.print(sb);
+    }
+
+    static boolean solve(ArrayList<Integer> g[])throws Exception
+    {
+        int n=g.length,i;
         boolean vis[]=new boolean[n],okay[]=new boolean[n];
         for(i=0;i<n;i++)
         if(!vis[i])         //task not yet completed
             if(cycle(g,vis,okay,i))  // if cycle exists, we cannot complete tasks
-            return false;
+                return false;
         return true;
     }
 
@@ -61,24 +75,11 @@ class TaskPrerequisiteMerlin
                 return true;
         }
         else if(!okay[x])
-            //this is an interesting scenario, if we have a node visited, but it is part of an undetected cycle, we detect the cycle here
+        //this is an interesting scenario, if we have a node visited, but it is part of an undetected cycle, we detect the cycle here
             return true;
 
         okay[n]=true;
         return false;
-    }
-
-    public static void main(String args[])throws Exception
-    {
-        StringBuilder sb=new StringBuilder();
-        int t=Integer.parseInt(bu.readLine());
-        while(t-->0)
-        {
-            boolean ans=solve();
-            if(ans) sb.append("YES\n");
-            else sb.append("NO\n");
-        }
-        System.out.print(sb);
     }
 }
 
@@ -101,4 +102,4 @@ sample o/p-
 YES
 YES
 NO
- */
+*/
