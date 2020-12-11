@@ -36,7 +36,7 @@ int recursiveSol(int n){
 void solve(){
     int n; //number of floor
     cin>>n;
-    cout<<recursiveSol(n)<<endl;
+    cout<<recursiveSol(n)+1<<endl;
         
 }
 
@@ -59,8 +59,8 @@ int main(){
 * output :-
 * 2
 * 1
-* 7
-* 13
+* 8
+* 14
 *
 * Explanation :- 
 * for test case no 3 or n==4 possible eteps are -
@@ -71,5 +71,6 @@ int main(){
  * 2 step + 2 step
  * 3 step + 1 step
  * 1 step + 3 step 
+ * 4 steps
  * total number of steps are 7
 */
