@@ -40,8 +40,11 @@ void solve()
     for (int i = 0; i < 256; i++) 
         if (arr[i].cnt == 1) 
             ans = min(ans, arr[i].index);  
-            
-    cout<<ans<<endl;
+    
+    if(ans == INT_MAX)
+        cout<<"-1"<<endl;
+    else
+        cout<<ans<<endl;
     return;
 }
 
@@ -59,18 +62,21 @@ int main()
 /*
 SAMPLE INPUT
 
-2
+4
 9
 chocolate
 6
 papaya
 6
 banana
+0
+
 
 SAMPLE OUTPUT
 
 1
 4
 0
+-1
 
 */
