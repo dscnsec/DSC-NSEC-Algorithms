@@ -28,8 +28,8 @@ We are very happy that you consider implementing algorithms and data structures 
 - User input can be done in any way.
 - If an implementation of the algorithm already exists, please refer to the [file-name section below](#new-file-name-guidelines).
 - You can suggest reasonable changes to existing algorithms.
-- Strictly use snake_case (underscore_separated) in filenames.
 - If you have added or modified code, please make sure the code compiles before submitting.
+- Please make sure to name the variables as verbose as possible. This helps in code readability.
 - **Be consistent in use of these guidelines.**
 
 #### Documentation
@@ -38,6 +38,9 @@ We are very happy that you consider implementing algorithms and data structures 
 - Do not update README.md along with other changes, first create an issue and then link to that issue in your pull request to suggest specific changes required to README.md
 
 #### Typical structure of a program:
+
+- Solution class name will the name of the problem. You can change it as you like as per convention.
+
 ```java
 /**
  * @file 
@@ -198,8 +201,9 @@ Make sure your PR checks all the below points.
 - [ ] Brief Description of Solution is given.
 - [ ] Time and Space Complexity is mentioned
 - [ ] Code is well indented.
-- [ ] Comments are clearly written wherever necessary
+- [ ] Comments are clearly written wherever necessary.
 - [ ] Code is successfully compiled and passes all test cases.
+- [ ] Variables naming is verbose.
 
 
 **Happy Coding!**
