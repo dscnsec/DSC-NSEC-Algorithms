@@ -20,23 +20,17 @@ class Push_Zero
     static int arr[];
     static void solve(int arr[],int n)
     {
-        int zero=0;
-        for(int j=0;j<n;j++)
-        {
-            if(arr[j]==0)
-                zero++;
-        }
-        int m=0,j=0;
+        int index=0,j=0;
         while(j<n)
         {
             if(arr[j]!=0)
             {
-                arr[m]=arr[j];
-                m++;
+                arr[index]=arr[j];
+                index++;
             }
             j++;
         }
-        for(j=m;j<n;j++)
+        for(j=index;j<n;j++)
             arr[j]=0;
     }
     public static void main (String[] args) throws java.lang.Exception
