@@ -15,7 +15,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Weird_Sorting_Arnab
+class WeirdSortingArnab
 {
     static void solve(int arr[],int n)
     {
