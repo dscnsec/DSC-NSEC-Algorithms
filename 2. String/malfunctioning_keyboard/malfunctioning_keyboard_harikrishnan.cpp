@@ -3,8 +3,9 @@
  * @brief Given a string containing only alphabets, and we have to
  * find the alphabets that are certainly working correctly
  *
- * Description-
- * We can count the occurence of each letter in the string and those with odd number of   * occurences are working correctly for sure. A HashMap can be used for the same.
+ * Description- Every character that cannot be paired with a same letter to its 
+ *   left or right neighbours as itself would be functioning correctly.
+ *  Note: A letter can be paired only once
  * 
  * Time Complexity - O(n) Space Complexity - O(n)
  * Auxillary space needed - O(1)
@@ -16,25 +17,32 @@ using namespace std;
 
 void solve()
 {
-    string s;
-    cin>>s;
-    unordered_map<char, int> cnt;
-    
-    for(unsigned long int i=0;i<s.size();i++)
-    {
-        if (cnt.find(s[i]) == cnt.end()) 
-            cnt[s[i]] = 1;
-            
-        else
-            cnt[s[i]]++;
-    }
-    
-    for (auto itr = cnt.begin(); itr != cnt.end(); itr++) 
-    { 
-        if(itr->second % 2 == 1)
-             cout << itr->first;
-    } 
-    cout<<endl;
+        string s;
+        cin>>s;
+        int n=s.length(),i=0;
+        
+        bool flag[26]={false}; // Bool array to mark the correctly working letters.
+        while(i<n)
+        {
+            if(s[i]==s[i+1])  //If current and its next letters are same, go to the next's next letter
+            {
+                i+=2;
+            }
+            else
+            {
+                flag[s[i]-'a'] = true; // Found a letter thats working correctly.
+                i++;
+            }
+        }
+        //Print those letters that are certainly functioning correct.
+        for(int i=0;i<26;i++)
+        {
+            if(flag[i])
+            {
+                cout<<char(i+97);
+            }
+        }
+        cout<<endl;
     return;
 }
 
@@ -50,6 +58,7 @@ int main()
 }
 
 /*
+
 SAMPLE INPUT
 
 4
@@ -63,6 +72,6 @@ SAMPLE OUTPUT
 a
 z
 
-cb
+bc
 
 */
