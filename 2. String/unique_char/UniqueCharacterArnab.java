@@ -19,7 +19,7 @@ public class UniqueCharacterArnab
     {
         int cnt[]=new int[26];  //This is the count array to store the occurences of characters
         for(int j=0;j<n;j++)
-            cnt[ch[j]-'a']++;      //Stores the count 
+             cnt[ch[j]-'a']++;      //Stores the count 
         int flag=0,index=-1;
         for(int j=0;j<n;j++)
         {
