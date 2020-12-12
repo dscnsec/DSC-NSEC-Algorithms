@@ -12,7 +12,7 @@
     The first line of the input contains a single integer T denoting the number of test cases. T test cases folows
     The first and only line of each test case contains a single digit N
  *  Output:
-    For each test case, print the number of ways the crewmates can climb to the second floor
+    For each test case, print the number of ways the crewmates can climb to the second floor.
  *  Sample input
     2
     1
