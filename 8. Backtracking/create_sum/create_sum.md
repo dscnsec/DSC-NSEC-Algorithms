@@ -17,7 +17,7 @@ The notorious impostors have sabatoged the reactors and the crewmates have only 
 ## Example Input
 
 1 <br/>
-4 <br/>
+4 7<br/>
 2 3 6 7
 
 ## Example Output
