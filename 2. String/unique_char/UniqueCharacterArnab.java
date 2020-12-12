@@ -13,7 +13,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-public class Unique_Character
+public class UniqueCharacterArnab
 {
     static int solve(char ch[],int n)
     {
