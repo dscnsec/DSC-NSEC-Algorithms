@@ -14,18 +14,17 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Weird_Sorting
+class Weird_Sorting_Arnab
 {
-    static int arr[];
     static void solve(int arr[],int n)
     {
         int i=0,left=0,right=n-1;    //left is the left indices which stores 7
         while(i<=right && left<=right)  //right is the end indices which stores 21
         {
-            if(arr[i]==7)           //checking if value is 7 or not,if yes then we would swap with                
+            if(arr[i]==7)           //checking if value is 7 or not,if yes then we would swap with
             {                       //Left indices and then increment left
                 if(arr[left]==7)    // Now if both left and i are same,then increment both else for different
-                {                   //indices having same value increment only left 
+                {                   //indices having same value increment only left
                     if(left==i) {
                         left++;
                         i++;
@@ -37,7 +36,7 @@ class Weird_Sorting
                 }
                 else
                 {
-                    int c=arr[left];     //Swap the values at the indices 
+                    int c=arr[left];     //Swap the values at the indices
                     arr[left]=arr[i];
                     arr[i]=c;
                     left++;
@@ -47,7 +46,7 @@ class Weird_Sorting
             {
                 if(arr[right]==21)
                 {
-                    right--;             //Same goes for this index as well as for left 
+                    right--;             //Same goes for this index as well as for left
                 }
                 else
                 {
@@ -70,15 +69,15 @@ class Weird_Sorting
         for(int i=0;i<t;i++)
         {
             int n=Integer.parseInt(buf.readLine());
-            String st1[]=(buf.readLine()).split(" ");   // Take the input 
+            String st1[]=(buf.readLine()).split(" ");   // Take the input
 
-            arr=new int[n];
+            int arr[]=new int[n];
             for(int j=0;j<n;j++) {
                 arr[j] = Integer.parseInt(st1[j]);
             }
-           solve(arr,n);    //Call the method
+            solve(arr,n);    //Call the method
             for(int j=0;j<n;j++)
-                sb.append(arr[j]+" ");  //Print it
+                sb.append(arr[j]+" ");
             sb.append("\n");
         }
         System.out.println(sb);
