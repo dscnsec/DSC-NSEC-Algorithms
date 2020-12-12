@@ -46,15 +46,19 @@ int main()
     return 0;
 }
 /*
+
 SAMPLE INPUT
+
 4
 1
 12 
 0
 9
 SAMPLE OUTPUT
+
 1
 233
 1
 55
+
 */
