@@ -17,7 +17,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-public class Pattern_Printing
+public class PatternPrintingArnab
 {
     static void solve(int num)
     {
