@@ -16,7 +16,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-public class Malfunction_Keyboard
+public class MalfunctionKeyboardArnab
 {
     static String solve(char ch[])
     {
