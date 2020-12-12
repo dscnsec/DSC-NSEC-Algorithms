@@ -12,7 +12,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-public class Climb_Stairs_Arnab
+public class ClimbStairsArnab
 {
     static int staircase(int n)
     {
