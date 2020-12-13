@@ -62,7 +62,7 @@ void solve(){
 	    }
 	}
 	
-	if(carry = '1')
+	if(carry == '1')
 	    sum += '1';         // add the remaining bit 
 	
 	reverse(sum.begin(), sum.end());    //reverse the resulting string
