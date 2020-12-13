@@ -12,54 +12,49 @@
  *  @author [codebook-2000](https://github.com/codebook-2000)
  */
  
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.HashSet;
+import java.util.Set;
 
-public class MalfunctionKeyboardArnab
-{
-    static String solve(char ch[])
-    {
-        Set<Character> set=new HashSet<Character>(); //Declaraing the set DS 
-        String st="";
-        if(ch.length==1)      //Dealing with a corner case for size==1
-            st+=ch[0];
-        else
-        {
-            int j=1;         //Starting from index 1;
-            while(j<ch.length)
-            {
-                if(ch[j]==ch[j-1])   //If its equal to previous value increment by 2
-                    j=j+2;
-                else
-                {
-                    set.add(ch[j-1]); //Else add to set and increment by 1 
+public class MalfunctioningKeyboardArnab {
+    static String solve(char[] ch) {
+        Set<Character> set = new HashSet<Character>(); //Declaraing the set DS
+        StringBuilder sb = new StringBuilder();//String for printing 
+
+        if (ch.length == 1)      //Dealing with a corner case for size==1
+            sb.append(ch[0]);
+        else {
+            int j = 1;         //Starting from index 1;
+            while (j < ch.length) {
+                if (ch[j] == ch[j - 1])   //If its equal to previous value increment by 2
+                    j = j + 2;
+                else {
+                    set.add(ch[j - 1]); //Else add to set and increment by 1
                     j++;
                 }
             }
-            if(ch[ch.length-1]!=ch[ch.length-2])  //Finally dealing with the last index(if got missed)
-                set.add(ch[ch.length-1]);
-            for(char x:set)
-                st+=x;  //Converting the set of characters to string 
+            if (ch[ch.length - 1] != ch[ch.length - 2])  //Finally dealing with the last index(if got missed)
+                set.add(ch[ch.length - 1]);
+            for (char x : set)
+                sb.append(x);  //Converting the set of characters to string
         }
-        return st;
+        return sb.toString();
     }
-    public static void main (String[] args) throws java.lang.Exception
-    {
-        BufferedReader buf=new BufferedReader(new InputStreamReader(System.in));
-        int t=Integer.parseInt(buf.readLine());
-        StringBuilder sb=new StringBuilder();
-        for(int i=0;i<t;i++)
-        {
-            String s=buf.readLine();      //Taking input
-            char ch[]=s.toCharArray();    //Converting to array of characters
-            String ans=solve(ch);         //Calling the method by passing the array 
-            sb.append(ans+"\n");          
+
+    public static void main(String[] args) throws java.lang.Exception {
+        BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(buf.readLine());
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < t; i++) {
+            String s = buf.readLine();      //Taking input
+            char[] ch = s.toCharArray();    //Converting to array of characters
+            String ans = solve(ch);         //Calling the method by passing the array
+            sb.append(ans + "\n");
         }
-        System.out.println(sb);      //Printing it 
+        System.out.println(sb);      //Printing it
     }
 }
-
 /*
 Input:-
 4
