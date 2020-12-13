@@ -10,7 +10,7 @@
  * After the loop the asteroid present in the stack are the ones to remain after collision.Use a ArrayList to print the 
  * Stack in reverse order.
  * Time Complexity-O(n) Extra Space Complexity-O(n)
- * @author [codebook-2000] (https://github.com/codebook-2000)
+ * @author [codebook-2000](https://github.com/codebook-2000)
  */
  
 import java.io.BufferedReader;
@@ -42,12 +42,16 @@ public class DestroyAsteroidArnab {
                         if (prev == curr) {
                             st.pop(); //If both sizes got equal then both get destroyed hence pop and increment j;
                             j++;
-                        } else if (prev > curr)
-                            j++;//if previous is greater than current then current is destroyed,hence increment j
-                        else {
-                            st.pop();//else pop the previous and push the current asteroid
-                            st.push(arr[j]);
-                            j++;
+                        } else {
+                            while (st.isEmpty() == false) {//Now we would pop elements uptill either the stack gets empty
+                                // Or the absolute peek value of stack becomes more than current value in array
+                                if (Math.abs(st.peek()) < Math.abs(arr[j]))
+                                    st.pop();
+                                else {
+                                    j++;//As soon as we get break from loop
+                                    break;
+                                }
+                            }
                         }
                     }
                 }
@@ -89,7 +93,7 @@ public class DestroyAsteroidArnab {
 
 /*
 Input:-
-4
+5
 3
 5 10 -5
 2
@@ -98,10 +102,13 @@ Input:-
 10 2 -5
 4
 -5 -1 1 5
+6
+1 2 3 4 5 -6
 
 Output:-
-5 10 
+5 10
 
-10 -5 
--5 -1 1 5 
+10
+-5 -1 1 5
+-6
 */
