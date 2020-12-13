@@ -18,12 +18,12 @@ In order to perform the next task, the crewmates must get to the second floor of
 
 2 <br/>
 1 <br/>
-2
+2 
 
 ## Example Output
 
 1 <br/>
-2
+2 
 
 ## Explanation
 

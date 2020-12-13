@@ -21,14 +21,22 @@ public class PushZeroArnab
         {
             if(arr[j]!=0)
             {
+<<<<<<< HEAD
+                arr[index]=arr[j];
+=======
                 arr[index]=arr[j];         //Non zero elements are stored at the beginning
+>>>>>>> 66298e0347678e864b2cf1cff1f24c8f685c7955
                 index++;
             }
             j++;
         }
         for(j=index;j<n;j++)
+<<<<<<< HEAD
+            arr[j]=0;
+=======
             arr[j]=0;          //Rest indices are the left zeroes
 
+>>>>>>> 66298e0347678e864b2cf1cff1f24c8f685c7955
     }
     public static void main (String[] args) throws java.lang.Exception
     {
