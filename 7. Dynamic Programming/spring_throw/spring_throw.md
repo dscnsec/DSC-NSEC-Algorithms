@@ -18,7 +18,7 @@ Find out the minimum number of times that the spring will throw you so that you 
 ## Example Input
 
 2 <br/>
-8 <br/>
+11 <br/>
 1 3 5 8 9 2 6 7 6 8 9 <br/>
 11 <br/>
 1 1 1 1 1 1 1 1 1 1 1
