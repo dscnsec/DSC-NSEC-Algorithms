@@ -35,7 +35,7 @@ void solve(){
 		(a.size() < b.size() ? a : b) += '0';       // size of both strings become same
 		
 		
-	for (int i = 0; i < aLen; i++){                 
+	for (int i = 0; i < a.size(); i++){                 
 	    if( a[i] == '0'  &&  b[i] == '0'){      
 	        if(carry == '0')                        
 	            sum += '0';
