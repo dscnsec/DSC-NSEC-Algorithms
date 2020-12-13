@@ -36,6 +36,7 @@ involves devising an algorithm which gives the correct output to a given set of 
    - `git pull upstream master`
 7. Commit and push the code to your fork.
 8. Create a pull request to have the changes merged into the origin.
+   - Ensure the title of your PR be in this format: [LANGUAGE] FileName.extension, where filename convention is as per convention.
    - Ensure you add to the comments of the pull request `fixes #<issue number>`, replacing **<issue number>** with the number of your issue will automatically close the issue when the pull request is merged.
 
 ## Prerequisites
