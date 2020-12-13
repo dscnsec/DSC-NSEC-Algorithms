@@ -8,16 +8,12 @@
  * Time Complexity-O(n) Extra Space Complexity-O(1)
  * @author [codebook-2000] (https://github.com/codebook-2000)
  */
-
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
-class Push_Zero
+public class PushZeroArnab
 {
-    static int arr[];
     static void solve(int arr[],int n)
     {
         int index=0,j=0;
@@ -25,13 +21,14 @@ class Push_Zero
         {
             if(arr[j]!=0)
             {
-                arr[index]=arr[j];
+                arr[index]=arr[j];         //Non zero elements are stored at the beginning
                 index++;
             }
             j++;
         }
         for(j=index;j<n;j++)
-            arr[j]=0;
+            arr[j]=0;          //Rest indices are the left zeroes
+
     }
     public static void main (String[] args) throws java.lang.Exception
     {
@@ -41,17 +38,20 @@ class Push_Zero
         StringBuilder sb=new StringBuilder();
         for(int i=0;i<t;i++)
         {
-            int n=Integer.parseInt(buf.readLine());
+            int n=Integer.parseInt(buf.readLine()); //Reading the input
             String st1[]=(buf.readLine()).split(" ");
-           arr=new int[n];
-           for(int j=0;j<n;j++)
-               arr[j]=Integer.parseInt(st1[j]);
-            solve(arr,n);
+
+            int arr[]=new int[n];
+            for(int j=0;j<n;j++)
+                arr[j]=Integer.parseInt(st1[j]);
+
+            solve(arr,n);  //Calling the method solve each time
+
             for(int j=0;j<n;j++)
                 sb.append(arr[j]+" ");
             sb.append("\n");
         }
-        System.out.println(sb);
+        System.out.println(sb);  //Printing it
     }
 }
 
