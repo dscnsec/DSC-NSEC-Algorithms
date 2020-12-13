@@ -25,7 +25,7 @@ public class DestroyAsteroidArnab {
 
         while (j < n)       //Starting the loop
         {
-            if (st.isEmpty() == true) {  //If stack is empty,then whatever negative or positive push to stack
+            if (st.isEmpty()) {  //If stack is empty,then whatever negative or positive push to stack
                 st.push(arr[j]);
                 j++;
             } else {
@@ -43,7 +43,7 @@ public class DestroyAsteroidArnab {
                             st.pop(); //If both sizes got equal then both get destroyed hence pop and increment j;
                             j++;
                         } else {
-                            while (st.isEmpty() == false) {//Now we would pop elements uptill either the stack gets empty
+                            while (!st.isEmpty()) {//Now we would pop elements uptill either the stack gets empty
                                 // Or the absolute peek value of stack becomes more than current value in array
                                 if (Math.abs(st.peek()) < Math.abs(arr[j]))
                                     st.pop();
@@ -60,8 +60,8 @@ public class DestroyAsteroidArnab {
         //To maintain the order of printing the asteroids we are storing in the arraylist,so that we can
         //print from bottom of stack
         ArrayList<Integer> adj = new ArrayList<Integer>();
-        j = 0;
-        while (st.isEmpty() == false)
+        
+        while (!st.isEmpty())
             adj.add(st.pop()); //Storing it in arraylist
         return adj; //returning it
 
