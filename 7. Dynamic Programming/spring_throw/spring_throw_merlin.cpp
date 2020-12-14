@@ -34,6 +34,11 @@ void solve()
         {
             ans++;
             cur=mx;
+            if(mx<=i)   //this means the max that we can reach is till this point, so we cannot move any further even if we tried
+            {
+                ans=-1;
+                break;
+            }
         }
     }
     cout<<ans<<"\n";
@@ -57,7 +62,6 @@ input-
 1 3 5 8 9 2 6 7 6 8 9
 11
 1 1 1 1 1 1 1 1 1 1 1
-
 output-
 3
 10
