@@ -2,9 +2,9 @@
  * @file: [CPP]malfunctioning_keyboard_csubhradipta.cpp 
  * @brief: Find keys that are not malfunctioning
  * @details: 
- * Traverse the string from end
- * If current character equals to next character , then skip one step 
- * Else append it to the result string
+ * COUNT number of consecutive repeating characters
+ * If COUNT is odd, then update count[str[i]-97] = 1
+ * Print char(i+97) if count[i] = 1
  * Space Complexity : O(n)
  * Time Complexity : O(n)
  * @author [Subhradipta Choudhury](https://github.com/csubhradipta)
@@ -14,15 +14,30 @@
 using namespace std;
 
 void solve(){
-	string str, result;
+	string str;
 	cin>>str;
-	for (int i = str.size() - 1; i >= 0; i--){
-		if (str[i] == str[i-1])
-			i--;                // skip one step
-		else
-			result += str[i];   // append the functioning key
+	int working[26] = {0};
+	char check;
+	int count;
+	for (int i = 0;  i < str.size(); i++){
+	    count = 0;
+	    check = str[i];
+	    count++;
+	    while (str[i+1] == check){	//count consecutive repeating characters
+	        count++;
+	        i++;
+	    }
+	    if( str[i] != str[i+1]){
+	        if(count%2==1)
+	            working[check - 97] = 1;  	// update the counter array
+	    }
 	}
-	cout<<result<<endl;
+	
+	for(int i = 0; i < 26; i++){
+	    if(working[i] == 1)
+	        cout<<char(i+97);	// print working keys
+	}
+	cout<<endl;
 }
 
 int main(){
