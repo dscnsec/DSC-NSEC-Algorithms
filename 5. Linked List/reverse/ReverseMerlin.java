@@ -6,7 +6,7 @@
  * Iterateb through the list
  * For any 2 consecutive numbers, add the previous node to the tail of the 2nd node
  *
- * Time Complexity-O(n), Space Complexity-O(n)
+ * Time Complexity-O(n), Space Complexity-O(1)
  *
  * @author merlin[https://github.com/m-e-r-l-i-n]
  */
