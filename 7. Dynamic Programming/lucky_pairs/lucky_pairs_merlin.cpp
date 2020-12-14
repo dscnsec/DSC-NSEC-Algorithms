@@ -58,11 +58,10 @@ int main()
 /*
 input-
 2
-11
-1 3 5 8 9 2 6 7 6 8 9
-11
-1 1 1 1 1 1 1 1 1 1 1
+abcde ace
+abcde afgh
+
 output-
-3
-10
+YES
+NO
 */
