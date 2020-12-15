@@ -3,7 +3,7 @@
  * Reverse a linked list
  *
  * Description-
- * Iterateb through the list
+ * Iterate through the list
  * For any 2 consecutive numbers, add the previous node to the tail of the 2nd node
  *
  * Time Complexity-O(n), Space Complexity-O(1)
