@@ -24,32 +24,36 @@ void solve(){
     for(int i = 0; i < n; i++){
         cin>>input[i];
     }
-        
+    
     while(!input.empty()){
         if(output.empty()){
-            output.push(input.back());		// push one element if stack is empty
-            input.pop_back();			// pop that element from input vector
+            output.push(input.back());      // push one element if stack is empty
+            input.pop_back();           // pop that element from input vector
         }
         else{
-            if ((output.top() < input.back()) && (abs(output.top()) != abs(input.back()))){
-                output.pop();					// smaller asteroid popped
-                output.push(input.back());		// larger one pushed	 
+            if ((output.top() < 0 && input.back() < 0) || (output.top() > 0 && input.back() > 0)){          // moving in same direction
+                output.push(input.back());   
                 input.pop_back();
             }
                 
-            else if (output.top() > input.back()){
-                output.push(input.back());			// smaller asteroid pushed as both moving in same direction
-                input.pop_back();
-            }
-                
-            else if (abs(output.top()) == abs(input.back())){	 
-                if (output.top() >= input.back()){				// moving in same direction
-                    output.push(input.back());
+            else if ((output.top() < 0 && input.back() > 0) || (output.top() > 0 && input.back() < 0)){     // moving in opposite direction
+                if(input.back() < output.top()){                     // moving away from each other
+                    output.push(input.back());   
                     input.pop_back();
-           	    }
-                else{
-                    output.pop();					// moving towards each other and collides
-                    input.pop_back();
+                }
+                else if(input.back() > output.top()){               //  moving towards each other      
+                    if(abs(output.top()) == abs(input.back())){     //  same size, both destroyed 
+                        input.pop_back();
+                        output.pop();
+                    }
+                    else if(abs(output.top()) > abs(input.back())){     //smaller one destroyed
+                        input.pop_back();
+                    }
+                    else{
+                        output.pop();
+                        output.push(input.back());
+                        input.pop_back();
+                    }
                 }
             }
         }
