@@ -1,7 +1,8 @@
 /*
  * PriorityTasksArnab.java
  * Given an array of priority values,we have to check if the value next is of higher priority or not.If yes, then print that value,else
- * Print -1.At the end consider it as circular array,and for the last value check if any higher value to it exists in the entire	array or not.
+ * Print -1.At the end consider it as circular array,and for the last value check if any higher value to it exists in the array uptill (n-2)th element as the (n-1)th
+ * element is the last value itself,so we would check before that value only if any value higher to it is present or not.
  * If yes,then print it,else print -1.
  * Description:-
  * Create a stack.First push the first value of stack.Then start from index 1 and check if the current value is higher than the
