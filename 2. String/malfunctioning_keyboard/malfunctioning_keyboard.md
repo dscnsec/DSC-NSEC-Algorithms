@@ -16,7 +16,7 @@ This malfunctioning must be complained and hence you need to find out the letter
 
 ## Output
 
-- For each test case, print the letters which are working correctly for sure.
+- For each test case, print the letters which are working correctly for sure, in alphabetical order.
 
 ## Example Input
 
