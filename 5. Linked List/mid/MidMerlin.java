@@ -29,7 +29,7 @@ class Node
     }
 }
 
-class Start
+class MidMerlin
 {
     public static void main(String args[])throws Exception
     {
