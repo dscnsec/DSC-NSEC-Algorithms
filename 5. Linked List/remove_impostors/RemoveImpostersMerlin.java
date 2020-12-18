@@ -26,7 +26,7 @@ class Node
     }
 }
 
-class Start
+class RemoveImpostersMerlin
 {
     public static void main(String args[])throws Exception
     {
