@@ -58,7 +58,7 @@ int main()
     }
 
     p = start;
-    while(p != NULL){      // iterating till mid position
+    while(p != NULL){      
         cout<<p->val<<" ";
         p = p->next;
     }
