@@ -37,18 +37,21 @@ class RemoveImpostersMerlin
         {
             int n=Integer.parseInt(bu.readLine());
             int i;
-            Node head=null;
+            Node head=null,ptr=null;
             String s[]=bu.readLine().split(" ");
             for(i=0;i<n;i++)
             {
                 int x=Integer.parseInt(s[i]);
                 Node cur=new Node(x);
-                if(head==null) head=cur;
+                if(head==null)
+                {
+                    head=cur;
+                    ptr=head;
+                }
                 else
                 {
-                    Node ptr=head;
-                    while(ptr.next!=null) ptr=ptr.next;
                     ptr.next=cur;
+                    ptr=ptr.next;
                 }
             }
 
