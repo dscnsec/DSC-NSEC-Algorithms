@@ -16,4 +16,4 @@ All the crewmates are asked by the Mission Head to form a queue, joined by the n
 
 ## Example Output
 
-1-->2-->6-->7-->8-->9-->10
+1-->2-->6-->7
