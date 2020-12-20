@@ -5,8 +5,8 @@
  * Description-
  * Let us first iterate through the the 1st x nodes of the linked list and add them to the answer
  * Then we can skip the next y nodes
- * Finally we add the remaining nodes to the tail of the xth node, and we have our updated list
- *
+ * Then we add x nodes again, and the process continues on and on until we have reached the end of the linked list
+ * 
  * Time Complexity-O(n), Space Complexity-O(1)
  *
  * @author merlin[https://github.com/m-e-r-l-i-n]
@@ -72,19 +72,20 @@ class RemoveImpostersMerlin
     {
         Node cur=head;
         Node last=new Node(0);
-        while(cur!=null && x>0)     //addup the 1st x elements in the ans list
+        int tx=x,ty=y;
+        while(cur!=null)
         {
-            x--;
-            last=last.next; //this is essential in all but 1st node
-            last=cur;
+            if(x>0)
+            {
+                last.next=cur;  //adds node to the tail
+                last=last.next; //points to the added node
+                x--;
+            }
+            else if(y>0) y--;
             cur=cur.next;
+            if(y==0 && x==0) {x=tx; y=ty;}  //first iterate for x positions, then y, and then reset count
         }
-        while(cur!=null && y>0)     //skip the 1st y elements
-        {
-            y--;
-            cur=cur.next;
-        }
-        last.next=cur;  //add up the remaining elements
+        last.next=null; //suppose there are k elements which should not be added, they need to be removed
     }
 }
 
@@ -96,5 +97,5 @@ sample i/p-
 1 2 3 4 5 6 7 8 9 10
 2 3
 sample o/p-
-1 2 6 7 8 9 10
+1 2 6 7
 */
