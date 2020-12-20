@@ -55,18 +55,6 @@ int main()
 }
 
 /*
-note that the input format is
-number of nodes
-parent1 child1
-parent2 child2
-...
-parentn childn
-root
-queries
-q1 q2
-...
-q(2queries-1) q(2queries)
-
 input1-
 7
 15 10
