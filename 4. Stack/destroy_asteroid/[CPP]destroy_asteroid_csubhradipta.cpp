@@ -3,11 +3,9 @@
  * @brief: Find the state of the asteroids after all collisions
  * @details: 
  * Compare the (top) and (top - 1) element
- * This has been done with the help of another stack
  * If they moved towards each other, the larger one will be kept and smaller one will be popped
  * Again, if both are of same size and moving towards each other, both will be popped
  * Else both will be kept
- * Note: The input vector is being treated as stack
  * Space Complexity : O(n)
  * Time Complexity : O(n)
  * @author [Subhradipta Choudhury](https://github.com/csubhradipta)
@@ -19,50 +17,48 @@ using namespace std;
 void solve(){
     int n;
     cin>>n;
-    vector<int> input(n);
-    stack<int> output;    
+    vector<int> asteroid(n);
+    stack<int> s;
+    
     for(int i = 0; i < n; i++){
-        cin>>input[i];
+        cin>>asteroid[i];
     }
     
-    while(!input.empty()){
-        if(output.empty()){
-            output.push(input.back());      // push one element if stack is empty
-            input.pop_back();           // pop that element from input vector
-        }
-        else{
-            if ((output.top() < 0 && input.back() < 0) || (output.top() > 0 && input.back() > 0)){          // moving in same direction
-                output.push(input.back());   
-                input.pop_back();
-            }
-                
-            else if ((output.top() < 0 && input.back() > 0) || (output.top() > 0 && input.back() < 0)){     // moving in opposite direction
-                if(input.back() < output.top()){                     // moving away from each other
-                    output.push(input.back());   
-                    input.pop_back();
-                }
-                else if(input.back() > output.top()){               //  moving towards each other      
-                    if(abs(output.top()) == abs(input.back())){     //  same size, both destroyed 
-                        input.pop_back();
-                        output.pop();
-                    }
-                    else if(abs(output.top()) > abs(input.back())){     //smaller one destroyed
-                        input.pop_back();
-                    }
-                    else{
-                        output.pop();
-                        output.push(input.back());
-                        input.pop_back();
-                    }
-                }
-            }
-        }
-    }
+    int ast;
+    
+    for(int i = 0; i < n; i++){
         
-    while(!output.empty()){
-        cout<<output.top()<<" ";
-        output.pop();
+        ast = asteroid[i];
+        
+        if(ast >= 0)
+            s.push(ast);            //moving right
+            
+        else {                      //moving left
+        
+            if((s.size() == 0) || s.top() < 0)
+                s.push(ast);                        //push, as previous also moving left
+                
+            else if(abs(s.top()) == abs(ast))       //both equal in size, hence destroyed
+                s.pop();
+            
+            else if (abs(s.top()) < abs(ast)){      //previous is smaller, hence destroy previous
+                s.pop();
+                i--;                                //check this with previous stack element.
+            }
+        }
     }
+
+    vector<int> result;
+    
+    while(!s.empty()){
+        result.push_back(s.top());
+        s.pop();
+    }
+    
+    reverse(result.begin(), result.end());
+    
+    for(int i = 0; i < result.size(); i++)
+        cout<<result[i]<<" ";
     cout<<endl;    
 }
 
