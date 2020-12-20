@@ -15,4 +15,4 @@ The space station is designed in a way such that each path diverges further into
 
 ## Explanation
 
-There are 2 possible ways to attain 8, (1 -> 4 -> 8) and (1 -> 2 -> 5). Note that in both cases, the coins are collected from root till leaf.
+There are 2 possible ways to attain 8, (1 -> 4 -> 3) and (1 -> 2 -> 5). Note that in both cases, the coins are collected from root till leaf.
