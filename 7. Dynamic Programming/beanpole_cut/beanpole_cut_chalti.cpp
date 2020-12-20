@@ -9,7 +9,7 @@
  * saving a furthur computation at this level, if not the procedure computes the value in the usual manner.We say that
  * the recursive procedure has been memoized it "remembers" what results it has computed previously.
  * 
- * time complexity;- O(n) , space complexity:-O(n)
+ * time complexity;- O(n^2) , space complexity:-O(n)
  * @author[chaltidutta](https://github.com/chaltidutta)
  * **/
 
