@@ -4,6 +4,7 @@
  * @details:
  * INSERT elements (first taking input for number of nodes from user)
  * DELETING (x+1)th node y times, as the next element comes to its previous place
+ * Repeat same after x nodes again
  * Space Complexity : O(n)
  * Time Complexity : O(n)
  * @author [Subhradipta Choudhury](https://github.com/csubhradipta)
@@ -44,21 +45,34 @@ int main()
         }
     }
     
-    int i;
-    while(y--){                 // for deleting nodes from same position as rest of nodes shifted left after deletion of one node
-        i = 1;
-        temp = p = start;       // initialized 
-        while(i < x){
-            temp = temp->next;
-            i++;
+    int skip, del;
+    p = start;
+    Node *ptr;
+    
+    while(p != NULL){
+        
+        skip = x-1;
+        while(skip-- && p != NULL)      // skipping x nodes
+            p = p->next;
+            
+        if(p == NULL)       // if current pointer reaches to null, traversal stopped
+            break;
+            
+        ptr = p->next;      // initializes ptr to (x+1)th node
+        
+        del = y;
+        while(del-- && ptr != NULL && temp != NULL){    // deleting y nodes
+            temp = ptr;
+            ptr = ptr->next;
+            free(temp);
         }
-        p = temp->next;         // skipping node
-        temp->next = p->next;   // previous node linked to next to skipped node
-        free(p);                // free the node 
+        
+        p->next = ptr;      
+        p = ptr;            // continue iteration for rest of the nodes
     }
 
     p = start;
-    while(p != NULL){      
+    while(p != NULL){     
         cout<<p->val<<" ";
         p = p->next;
     }
