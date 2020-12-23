@@ -44,32 +44,28 @@ int main(){
 
     int n; //length of the linked list
     cin>>n;
-    int data;
-    cin>>data;
-    Node *head = new Node (data);
-    Node *tail = head;
-
     //taking element input of the linked list
-    for(int i = n-1; i > 0; i--)
-    {
-        cin>>data;
-        tail->next = new Node(data);
-        tail = tail->next;
-    } //linked list creating end
-    
-    Node* prevptr = NULL;
-    Node* currptr = head;
-    Node* nextptr;
-    while(currptr != NULL){
-        nextptr = currptr->next;
-        currptr->next = prevptr;
-        prevptr = currptr;
-        currptr = nextptr; 
-    } 
+    if(n>0){
 
-    while(prevptr != NULL){
-        cout<<prevptr->data<<" ";
-        prevptr = prevptr->next;
+        int data;
+        cin>>data;
+        Node *head = new Node (data);
+        Node *tail = head;
+
+        for(int i = n; i > 1; i--)
+        {
+            cin>>data;
+            tail->next = new Node(data);
+            tail = tail->next;
+        } 
+    
+        Node* newhead = reverse(head);
+        while(newhead != NULL){
+            cout<<newhead->data<<" ";
+            newhead = newhead->next;
+        }
+    }else{
+        cout<<"Null Linked List"<<endl;
     }
 
 
