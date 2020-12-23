@@ -44,26 +44,29 @@ int main()
         }
     }
     
-    Node *evenStart, *oddEnd, *evenEnd;
+    if( start != NULL && start->next != NULL){
+     
+        Node *evenStart, *oddEnd, *evenEnd;
 
-    evenStart = start->next;    // pointing to second node of linked list
-    oddEnd = start;             // pointing to first node of linked list
-    evenEnd = evenStart;        // pointing to second node of linked list
+        evenStart = start->next;    // pointing to second node of linked list
+        oddEnd = start;             // pointing to first node of linked list
+        evenEnd = evenStart;        // pointing to second node of linked list
 
-    while((evenEnd != NULL) && (oddEnd != NULL) && (evenEnd->next != NULL)){
+        while((evenEnd != NULL) && (oddEnd != NULL) && (evenEnd->next != NULL)){
 
-        oddEnd->next = evenEnd->next;       //  pointing to next odd node
-        oddEnd = evenEnd->next;             //  set oddEnd to next odd node
-        evenEnd->next = oddEnd->next;       //  pointing to next even node
-        evenEnd = evenEnd->next;            //  set evenEnd to next even node
-    }
+            oddEnd->next = evenEnd->next;       //  pointing to next odd node
+            oddEnd = evenEnd->next;             //  set oddEnd to next odd node
+            evenEnd->next = oddEnd->next;       //  pointing to next even node
+            evenEnd = evenEnd->next;            //  set evenEnd to next even node
+        }
 
-    oddEnd->next = evenStart;       // linking the start of even node to the end of odd node
+        oddEnd->next = evenStart;       // linking the start of even node to the end of odd node
 
-    p = start;
-    while(p != NULL){     
-        cout<<p->val<<" ";
-        p = p->next;
+        p = start;
+        while(p != NULL){     
+            cout<<p->val<<" ";
+            p = p->next;
+        }
     }
     
     return 0;
