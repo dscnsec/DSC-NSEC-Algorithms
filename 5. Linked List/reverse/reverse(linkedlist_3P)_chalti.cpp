@@ -37,40 +37,51 @@ Node * reverse(Node* &head){
     return newhead;
 }
 
-int main(){
+int main()
+{
 
     //making the linked list
 
-
     int n; //length of the linked list
-    cin>>n;
-    //taking element input of the linked list
-    if(n>0){
-
+    cin >> n;
+    if (n > 0)
+    {
         int data;
-        cin>>data;
-        Node *head = new Node (data);
+        cin >> data;
+        Node *head = new Node(data);
         Node *tail = head;
 
-        for(int i = n; i > 1; i--)
+        //taking element input of the linked list
+        for (int i = n - 1; i > 0; i--)
         {
-            cin>>data;
+            cin >> data;
             tail->next = new Node(data);
             tail = tail->next;
-        } 
-    
-        Node* newhead = reverse(head);
-        while(newhead != NULL){
-            cout<<newhead->data<<" ";
-            newhead = newhead->next;
+        } //linked list creating end
+
+        Node *prevptr = NULL;
+        Node *currptr = head;
+        Node *nextptr;
+        while (currptr != NULL)
+        {
+            nextptr = currptr->next;
+            currptr->next = prevptr;
+            prevptr = currptr;
+            currptr = nextptr;
         }
-    }else{
-        cout<<"Null Linked List"<<endl;
+
+        while (prevptr != NULL)
+        {
+            cout << prevptr->data << " ";
+            prevptr = prevptr->next;
+        }
+    }
+    else
+    {
+        cout << "Null Linked List" << endl;
     }
 
-
     return 0;
-
 }
 
 /*
