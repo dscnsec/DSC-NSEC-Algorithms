@@ -45,23 +45,28 @@ int main(){
 
     int n; //length of the linked list
     cin>>n;
-    int data;
-    cin>>data;
-    Node *head = new Node (data);
-    Node *tail = head;
-
     //taking element input of the linked list
-    for(int i = n-1; i > 0; i--)
-    {
+    if(n>0){
+
+        int data;
         cin>>data;
-        tail->next = new Node(data);
-        tail = tail->next;
-    } 
+        Node *head = new Node (data);
+        Node *tail = head;
+
+        for(int i = n; i > 1; i--)
+        {
+            cin>>data;
+            tail->next = new Node(data);
+            tail = tail->next;
+        } 
     
-    Node* newhead = reverse(head);
-    while(newhead != NULL){
-        cout<<newhead->data<<" ";
-        newhead = newhead->next;
+        Node* newhead = reverse(head);
+        while(newhead != NULL){
+            cout<<newhead->data<<" ";
+            newhead = newhead->next;
+        }
+    }else{
+        cout<<"Null Linked List"<<endl;
     }
 
 
