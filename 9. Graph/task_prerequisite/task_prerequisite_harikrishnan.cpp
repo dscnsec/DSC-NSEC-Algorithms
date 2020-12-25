@@ -82,20 +82,21 @@ int main()
 SAMPLE INPUT
 
 3
-aab
-nitin
-racecar
+2 1
+1 0
+4 4
+1 0
+2 0
+3 1
+3 2
+2 2
+1 0
+0 1
 
 SAMPLE OUTPUT
 
-a a b 
-aa b 
-n i t i n 
-n iti n 
-nitin 
-r a c e c a r 
-r a cec a r 
-r aceca r 
-racecar 
+YES
+YES
+NO 
 
 */
