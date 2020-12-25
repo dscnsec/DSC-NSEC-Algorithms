@@ -24,7 +24,7 @@ Two integers are given, L and R. You are the crewmate who has been assigned the 
 
 ## Example Output
 
-**5** <br/>
+**6** <br/>
 **4** <br/>
 
 ## Explanation
