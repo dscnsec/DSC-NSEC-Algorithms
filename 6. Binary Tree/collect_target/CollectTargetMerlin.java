@@ -1,5 +1,5 @@
 /**
- * CollectTargerMerlin.java
+ * CollectTargetMerlin.java
  * Check if any root to leaf path has a given sum
  *
  * Description-
@@ -15,7 +15,7 @@
 import java.io.*;
 import java.util.*;
 
-class CollectTargerMerlin
+class CollectTargetMerlin
 {
     public static void main(String args[])throws Exception
     {
