@@ -34,7 +34,7 @@ public class SaveYourselfArnab {
         Deque<String> row = new ArrayDeque<String>();
 
         // Call recursive function to generate
-        // all partiions and store in allPart
+        // all partitions and store in entire 
         allPalindromesUtil(entire, row, 0, n, s);
 
         //Append the ans to this
@@ -64,7 +64,7 @@ public class SaveYourselfArnab {
             return;                          //entire string to arraylist and return from method
         }
 
-        // Here we will select all possible substrings by recus=rsion inside loop
+        // Here we will select all possible substrings by recursion inside loop
         for (int i = start; i < n; i++) {
 
             // If substring str[start..i] is palindrome
