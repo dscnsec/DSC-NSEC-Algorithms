@@ -22,7 +22,7 @@ bool checkCycle(int n, vector<int> adj[], vector<bool>& vis, vector<bool>& rec)
         // Mark the present node as visited and include it in the recursive stack
         vis[n] = true; 
         rec[n] = true;
-    
+
         // Traverse through all the adjacent nodes of the present node.
         for(long unsigned int i = 0; i < adj[n].size(); ++i) 
         { 
@@ -37,11 +37,16 @@ bool checkCycle(int n, vector<int> adj[], vector<bool>& vis, vector<bool>& rec)
     rec[n] = false;  // Remove the node from the recursive stack. 
     return false;   
 }
- 
+
 void solve()
 {
     int N,K,u,v;
     cin>>N>>K;                 // Input the string
+    if(N == 0)            // No tasks gievn.
+    {
+        cout<<"YES";
+        return;
+    }
     vector<int> adj[N];  // A vector to store the adjacent nodes of all nodes.
     for(int i=0;i<K;i++)
     {
@@ -50,7 +55,7 @@ void solve()
     }
     vector<bool> vis(N);        // To mark all the visited nodes
     vector<bool> rec(N);        // To mark the nodes as visited or not in the recursion
-    
+
     for(int i=0;i<N;i++)
     {
         vis[i] = false;
@@ -79,6 +84,7 @@ int main()
 }
 
 /*
+
 SAMPLE INPUT
 
 3
