@@ -29,4 +29,4 @@ i++;
 Time complexity-O(n)<br>
 Space complexity-O(1)<br>
 <br>
-The code can be found [here] (https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/1.%20Array/weird_sorting/WeirdSortingMerlin.cpp)<br>
+The code can be found [here](https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/1.%20Array/weird_sorting/WeirdSortingMerlin.cpp). <br>
