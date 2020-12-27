@@ -1,6 +1,6 @@
 # Missing Id
 
-[Problem link](https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/1.%20Array/missing_id/missing_id.md)
+[Problem link](https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/1.%20Array/missing_id/missing_id.md)<br>
 The problem asks us to find the stack number of the nth id.<br>
 
 Now, the rules of stacking ids are:
