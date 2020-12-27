@@ -1,6 +1,7 @@
 # Missing Id
 
 [Problem link](https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/1.%20Array/missing_id/missing_id.md)<br>
+<br>
 The problem asks us to find the stack number of the nth id.<br>
 
 Now, the rules of stacking ids are:
@@ -15,4 +16,5 @@ Hence our formula is<br>
 <br>
 Time complexity-O(1)<br>
 Space complexity-O(1)<br>
+<br>
 The code can be found [here](https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/1.%20Array/missing_id/MissingIdMerlin.cpp)
