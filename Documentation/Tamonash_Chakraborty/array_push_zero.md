@@ -8,4 +8,5 @@ At first, we initialize our pointer to 0.<br>
 After that, whenever we encounter a non zero, we put the non zero element in the position where our pointer is and increment the pointer. Along with it, we set the current index value 
 to 0, because some positions will have zeros in our final array, and we need to iterate to fill them again.<br>
 So our problem is solved in O(n) time, O(1) space complexities.<br>
+<br>
 The code can be found [here](https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/1.%20Array/push_zero/PushZeroMerlin.cpp).
