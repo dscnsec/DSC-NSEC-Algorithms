@@ -8,16 +8,27 @@ Id no of 2 crewmates, X and Y has been given. The Space Mission General wants to
 
 ## Input
 
-- The first line of input contains a single integer T. T lines follow
+- The first line of input contains a single integer n, denoting the number of nodes. n-1 lines follow
+- In every line, there will be two space separated integers, u and v, denoting the parent and child node
+- A single integer, denoting the root of the tree
+- A single integer q, denoting the number of queries. q lines follow
 - Two space separated integers, X and Y, belonging to the binary tree.
 
 ## Example Input
 
 ![btree](../../images/btree3.png)
 
-**2** <br/>
-**10 20** <br/>
-**5 17**
+**7<br>
+15 10<br>
+15 20<br>
+10 5<br>
+10 12<br>
+20 17<br>
+20 25<br>
+15<br>
+2<br>
+10 20<br>
+5 17**
 
 ## Example Output
 
