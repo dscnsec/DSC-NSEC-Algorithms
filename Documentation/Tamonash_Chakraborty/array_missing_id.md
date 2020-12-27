@@ -10,4 +10,4 @@ So now, we can easily predict the stack number if n<=2, ie 1<br>
 How do we predict the stack number of the remaining ids?<br>
 Note that for any id n, the stack number will be the smallest k such kx>=(n-2)<br>
 Hence our formula is<br>
-k=1+(n-2)/x+(n-2)%x==0?0:1
+![](https://github.com/m-e-r-l-i-n/DSC-NSEC-Algorithms/blob/documentation/Documentation/Tamonash_Chakraborty/dependencies/img-c4001308fb41f1da.png)
