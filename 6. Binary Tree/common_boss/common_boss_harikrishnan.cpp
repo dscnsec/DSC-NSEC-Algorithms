@@ -8,7 +8,7 @@
  * By following this,the node which gets a not NULL value returned from both its sides will be the LCA.
  * A special case occurs when the lca is one of the nodes(with employee ids), in that case, the algorithm, figures out it, and returns the  lca node, without even reaching the other employee id node.
  *
- * Time Complexity - O(N+K) Space Complexity - O(N)
+ * Time Complexity - O(N) Space Complexity - O(N)
  * @author [Harikrishnan6336](https://github.com/Harikrishnan6336)
  **/
 
