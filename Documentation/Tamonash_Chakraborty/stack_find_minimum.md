@@ -26,4 +26,5 @@ where `M=1000000007`
 
 Time complexity-O(n)<br>
 Space complexity-O(n)
+
 The code can be found [here](https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/4.%20Stack/find_min/find_min_merlin.cpp).
