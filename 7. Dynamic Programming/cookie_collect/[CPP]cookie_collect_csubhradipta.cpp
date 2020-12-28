@@ -16,9 +16,9 @@
 using namespace std; 
 
 void solve(){
-    int n;
+    int n, maxCookies = 0;
     cin>>n;
-    int cookies[n][n], maxCookies[n];
+    int cookies[n][n];
     for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++)
             cin>>cookies[i][j];       
@@ -27,23 +27,23 @@ void solve(){
     
     for (int j = 1; j < n; j++) { 
         for (int i = 0; i < n ; i++) {          // Traversing matrix top to bottom
-                                                                                    // adding the max element in the previous column
+                                                                // adding the max element in the previous column
         	if ( i == 0)
-        		cookies[i][j] += max(cookies[i][j - 1], cookies[i + 1][j - 1]);                 // for top row, left-up element is not there
+        		cookies[i][j] += max(cookies[i][j - 1], cookies[i + 1][j - 1]);     // for top row, left-up element is not there
 
         	else if ( i == n-1)
-        		cookies[i][j] += max(cookies[i - 1][j - 1], cookies[i][j - 1]);                         // for bottom row, left-down element is not there
+        		cookies[i][j] += max(cookies[i - 1][j - 1], cookies[i][j - 1]);     // for bottom row, left-down element is not there
 
         	else
-                cookies[i][j] += max({cookies[i - 1][j - 1], cookies[i][j - 1], cookies[i + 1][j - 1]});                // for intermediate rows, all element present
+                cookies[i][j] += max({cookies[i - 1][j - 1], cookies[i][j - 1], cookies[i + 1][j - 1]});   // for intermediate rows, all element present
                                                                                                             
 
             if( j == n-1)
-                maxCookies[i] = cookies[i][j];                                  // storing the elements of last column 
+                maxCookies = max( maxCookies, cookies[i][j] );       // maximum cookies that can be collected
         } 
     } 
 
-    cout<<*max_element(maxCookies, maxCookies + n)<<endl;           // maximum cookies that can be collected
+    cout<<maxCookies<<endl;       
      
 }
 
