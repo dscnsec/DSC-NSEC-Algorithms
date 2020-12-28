@@ -26,5 +26,7 @@ What about the 1 in msb?<br>
 It is there, present in carry.<br>
 So we need to add the carry after our computer answer.<br>
 And since we computed the answer in a reversed fashion, output the reverse of the answer computed.<br>
+Time complexity-O(n)<br>
+Space complexity-O(n)
 
 The code can be found [here](https://github.com/dscnsec/DSC-NSEC-Algorithms/blob/master/2.%20String/binary_add/binary_add_merlin.cpp).
