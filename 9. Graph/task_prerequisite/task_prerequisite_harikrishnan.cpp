@@ -24,13 +24,13 @@ bool checkCycle(int n, vector<int> adj[], vector<bool>& vis, vector<bool>& rec)
         rec[n] = true;
 
         // Traverse through all the adjacent nodes of the present node.
-        for(long unsigned int i = 0; i < adj[n].size(); ++i) 
+        for(auto i = adj[n].begin(); i < adj[n].end(); ++i) 
         { 
         // If the presnt adjacent node is not visited already and if those nodes  form a cycle.
-            if (!vis[i] && checkCycle(i, adj, vis, rec) ) 
+            if (!vis[*i] && checkCycle(*i, adj, vis, rec) ) 
                 return true; 
         //  Else if that node has already come across the recursion stack.
-            else if (rec[i]) 
+            else if (rec[*i]) 
                 return true; 
         } 
     }
@@ -53,14 +53,9 @@ void solve()
         cin>>u>>v;
         adj[u].push_back(v);
     }
-    vector<bool> vis(N);        // To mark all the visited nodes
-    vector<bool> rec(N);        // To mark the nodes as visited or not in the recursion
+    vector<bool> vis(N,false);        // To mark all the visited nodes
+    vector<bool> rec(N,false);        // To mark the nodes as visited or not in the recursion
 
-    for(int i=0;i<N;i++)
-    {
-        vis[i] = false;
-        rec[i] = false;
-    }
     for(int i = 0; i < N; i++) 
         if (checkCycle(i, adj, vis, rec))   // A function to check if the graph is cyclic or not
             {
