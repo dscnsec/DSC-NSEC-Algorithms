@@ -10,5 +10,5 @@ Answer can be found here : <a href="https://github.com/chaltidutta/DSC-NSEC-Algo
   taken a count variable to count the total number of array element which lies between those.
   after finding the sum and the number of elements i have printed the mean by dividing the sum and count.
 
-  Time complexity : O(nlogn)
+  Time complexity : O(nlogn) <br>
   Space Complexity : O(1)
