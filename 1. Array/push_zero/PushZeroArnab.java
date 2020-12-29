@@ -28,7 +28,6 @@ public class PushZeroArnab
         }
         for(j=index;j<n;j++)
             arr[j]=0;          //Rest indices are the left zeroes
-
     }
     public static void main (String[] args) throws java.lang.Exception
     {
@@ -40,13 +39,10 @@ public class PushZeroArnab
         {
             int n=Integer.parseInt(buf.readLine()); //Reading the input
             String st1[]=(buf.readLine()).split(" ");
-
             int arr[]=new int[n];
             for(int j=0;j<n;j++)
                 arr[j]=Integer.parseInt(st1[j]);
-
             solve(arr,n);  //Calling the method solve each time
-
             for(int j=0;j<n;j++)
                 sb.append(arr[j]+" ");
             sb.append("\n");
@@ -54,7 +50,6 @@ public class PushZeroArnab
         System.out.println(sb);  //Printing it
     }
 }
-
 /*
 input:-
 2
@@ -63,7 +58,6 @@ input:-
 6
 0 5 6 9 0 3
 */
-
 /*
 output:-
 1 2 3 0 0 
