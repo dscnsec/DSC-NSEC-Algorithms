@@ -12,7 +12,7 @@ algorithm of Quick Sort. We can do 3-way partitioning here. We can divide the ar
 
 ### Approach
  
-We partition the array into thrice(containing the three elements), and beg, mid are the start positions of the first two sections(comprising of '7's and '14's), and end is the end position of the last section(comprising of '21's).<br>
+We partition the array into four sections(containing the three elements and a section comprising of the unknown elements), and beg, mid are the start positions of the first two sections(comprising of '7's and '14's), and end is the end position of the last section(comprising of '21's).<br>
 We can then traverse the array while(mid <= end) i.e. through the section of the unknowns and keep each element in its to its right position. Each time we consider the mid element. 
 There are three possiblities, they are when the mid element is :
 
