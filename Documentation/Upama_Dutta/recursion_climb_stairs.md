@@ -22,6 +22,6 @@ that means, it will return sum of(recursiveSol(n-1)+recursiveSol(n-2))
         return recursiveSol(n-1)+recursiveSol(n-2);
 </i></p><br>
 
-Time complexity-O(n) 
+Time complexity-O(n) <br>
 Space complexity-O(1)
 
