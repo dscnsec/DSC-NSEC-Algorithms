@@ -23,5 +23,5 @@ if (n < 1)
     Rows(n);
 </i></p>
 
-Time complexity-O(n) 
+Time complexity-O(n) <br>
 Space complexity-O(1)
