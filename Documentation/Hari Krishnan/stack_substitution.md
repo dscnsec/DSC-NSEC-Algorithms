@@ -16,9 +16,10 @@ We traverse the string and if the element we find is :
 - 'a' - we simply push this character into the stack
 - 'b' - we simply push this character into the stack
 - 'c' 
-      - we check whether the size of the stack is greater than or equal to 2 and the top element in stack is 'b'. If not we mark flag as false and break out of the loop. If Yes then we pop the stack once<br>
-      - Then we check whether the size of the stack is greater than or equal to 1 and the top element in stack is 'a'. If not we mark flag as false and break out of the loop. If Yes then we pop the stack once<br>
-      
+      <ol>
+      <li> we check whether the size of the stack is greater than or equal to 2 and the top element in stack is 'b'. If not we mark flag as false and break out of the loop. If Yes then we pop the stack once<br>
+      <li> Then we check whether the size of the stack is greater than or equal to 1 and the top element in stack is 'a'. If not we mark flag as false and break out of the loop. If Yes then we pop the stack once<br>
+      <ol>
  Once we are out of the loop, check if the stack is empty and the flag is true, then the string fulfills the condition. Else the string fails to fulfill the condition.
 <br> <br>
 
