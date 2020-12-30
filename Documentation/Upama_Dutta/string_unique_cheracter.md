@@ -26,5 +26,5 @@ for(int i = 0 ; i < n ; i++){
     }
                      return -1; </i></p><br>
 
-Time complexity : O(n)
+Time complexity : O(n) <br>
 Space complexity :- O(n)
