@@ -73,10 +73,12 @@ void solve() {
         right[i] = Count;
     }
     int answer = 0;
+    long long int M=1000000007;
     for (int i=0;i<n;i++)
     {
        answer = (answer + a[i] * left[i] * right[i]);
     }
+    answer = answer % M;
     cout<<answer<<endl;
 }
 int main() {
