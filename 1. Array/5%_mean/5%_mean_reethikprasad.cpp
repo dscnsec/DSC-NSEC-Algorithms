@@ -17,11 +17,9 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-int main() {
-    int t;
-    cin>>t;
-    while(t--){
-    int n;
+
+void solve(){
+	int n;
     cin>>n;
     int a[n];
     int five=(n*5)/100;
@@ -37,6 +35,12 @@ int main() {
     mean=sum/(totalleft);
     cout<<fixed;
     cout<<setprecision(5)<<mean<<endl;
+}
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+    	solve();
     }
     return 0;
 }
@@ -55,4 +59,4 @@ int main() {
 
 4.00000 <br/>
 4.77778
-/*
+*/
